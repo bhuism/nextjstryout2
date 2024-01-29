@@ -50,7 +50,7 @@
     "typescript": "^5.3.3"
   },
   "engines": {
-    "node": ">=16.x.x",
+    "node": ">=20.x.x",
     "pnpm": ">=8"
   }
 }
