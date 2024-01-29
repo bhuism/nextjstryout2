@@ -4,7 +4,6 @@
   "major": {
     "enabled": false
   },
-  "updatePinnedDependencies": false,
   "stabilityDays": 2,
   "timezone": "Asia/Jakarta",
   "schedule": ["before 1am on Monday"]
