@@ -12,4 +12,5 @@ module.exports = withPWA({
   eslint: {
     dirs: ['src'],
   },
+  output: 'standalone',
 });
