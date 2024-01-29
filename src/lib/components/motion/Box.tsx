@@ -1,8 +1,13 @@
 'use client';
 
-import { chakra } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 
-const MotionBox = motion(chakra.div);
+// const Providers = ({ children }: { children: React.ReactNode }) => {
+
+const MyDiv: React.FC = ({ children }: React.PropsWithChildren) => (
+  <div>{children}</div>
+);
+
+const MotionBox = motion(MyDiv);
 
 export default MotionBox;
