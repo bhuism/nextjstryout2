@@ -15,13 +15,13 @@
     "format": "prettier --write src",
     "up-interactive": "pnpm up -i",
     "up-latest": "pnpm up-interactive -L",
-    "release": "cross-env HUSKY=0 standard-version",
-    "push-release": "git push --follow-tags origin main",
-    "prepare": "husky"
+    "release": "cross-env standard-version",
+    "push-release": "git push --follow-tags origin main"
   },
   "dependencies": {
     "@emotion/cache": "^11.11.0",
     "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.15.6",
     "@mui/material": "^5.15.6",
     "@mui/material-nextjs": "^5.15.6",
@@ -47,7 +47,6 @@
     "eslint": "^8.56.0",
     "eslint-config-next": "^14.1.0",
     "eslint-config-sznm": "^2.0.2",
-    "husky": "^9.0.7",
     "lint-staged": "^15.2.0",
     "next-sitemap": "^4.2.3",
     "prettier": "^3.2.4",

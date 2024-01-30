@@ -1,11 +1,8 @@
 import type { Metadata, Viewport } from 'next';
+import type { PropsWithChildren } from 'react';
 
 import Providers from '~/app/providers';
 import Layout from '~/lib/layout';
-
-type RootLayoutProps = {
-  children: React.ReactNode;
-};
 
 const APP_NAME = 'testjs';
 
@@ -38,7 +35,7 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-const RootLayout = ({ children }: RootLayoutProps) => {
+const RootLayout = ({ children }: PropsWithChildren) => {
   return (
     <html lang="en">
       <body>
