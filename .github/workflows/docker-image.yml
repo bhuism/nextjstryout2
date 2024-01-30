@@ -8,7 +8,7 @@ on:
 
 env:
   REGISTRY: europe-west4-docker.pkg.dev/impl-383520/docker
-  IMAGE_NAME: ${{ github.repository }}
+  IMAGE_NAME: ${{ github.event.repository.name }}
 
 jobs:
   build-and-push-image:
