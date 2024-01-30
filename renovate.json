@@ -5,6 +5,5 @@
     "enabled": false
   },
   "stabilityDays": 2,
-  "timezone": "Europe/Amsterdam",
-  // "schedule": ["before 1am on Monday"]
+  "timezone": "Europe/Amsterdam"
 }
