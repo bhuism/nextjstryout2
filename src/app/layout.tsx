@@ -4,11 +4,11 @@ import type { PropsWithChildren } from 'react';
 import Providers from '~/app/providers';
 import Layout from '~/lib/layout';
 
-const APP_NAME = 'testjs';
+const APP_NAME = 'nextjstryout2';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://nextjstryout2.impl.nl'),
-  title: { default: APP_NAME, template: '%s | testjs' },
+  title: { default: APP_NAME, template: '%s | nextjstryout2' },
   description: 'Next.js + TypeScript template',
   applicationName: APP_NAME,
   appleWebApp: {
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     url: 'https://nextjstryout2.impl.nl',
-    title: 'testjs',
+    title: 'nextjstryout2',
     description: 'Next.js + TypeScript template',
   },
   twitter: {
