@@ -18,6 +18,9 @@ jobs:
       group: docker_build
       cancel-in-progress: true
 
+    permissions:
+      contents: read
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
