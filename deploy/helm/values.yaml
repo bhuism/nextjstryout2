@@ -16,7 +16,11 @@ controllers:
             path: /api/healthcheck
             port: 3000
           startup:
-            enabled: true
+            type: HTTP
+            path: /api/healthcheck
+            port: 3000
+            spec:
+              initialDelaySeconds: 5
         resources:
           limits:
             cpu: 100m
