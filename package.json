@@ -2,7 +2,7 @@
   "name": "nextjstryout2",
   "version": "0.1.9",
   "private": true,
-  "author": "sozonome",
+  "author": "bhuism",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

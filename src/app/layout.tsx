@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     description: 'Next.js + TypeScript template',
   },
   twitter: {
-    creator: '@sozonome',
+    creator: '@bhuism',
     card: 'summary_large_image',
   },
 };
