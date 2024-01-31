@@ -9,11 +9,11 @@ controllers:
         probes:
           liveness:
             type: HTTP
-            path: /
+            path: /api/healthcheck
             port: 3000
           readiness:
             type: HTTP
-            path: /
+            path: /api/healthcheck
             port: 3000
           startup:
             enabled: true
