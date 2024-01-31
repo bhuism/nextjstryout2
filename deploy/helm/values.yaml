@@ -6,6 +6,9 @@ controllers:
           repository: europe-west4-docker.pkg.dev/impl-383520/docker/nextjstryout2
           tag: "latest"
           pullPolicy: Always
+
+        replicas: 3
+        
         probes:
           liveness:
             type: HTTP
@@ -24,10 +27,10 @@ controllers:
         resources:
           limits:
             cpu: 100m
-            memory: 64Mi
+            memory: 128Mi
           requests:
             cpu: 100m
-            memory: 64Mi
+            memory: 128Mi
 
 service:
   main:
