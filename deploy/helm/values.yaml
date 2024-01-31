@@ -1,7 +1,7 @@
 controllers:
   main:
 
-    replicas: 3
+    replicas: 2
 
     containers:
       main:
