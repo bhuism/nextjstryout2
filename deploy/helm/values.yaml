@@ -10,11 +10,11 @@ controllers:
           liveness:
             type: HTTP
             path: /
-            port: http
+            port: 3000
           readiness:
             type: HTTP
             path: /
-            port: http
+            port: 3000
           startup:
             enabled: true
         resources:
