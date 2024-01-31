@@ -7,7 +7,7 @@ import Layout from '~/lib/layout';
 const APP_NAME = 'testjs';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://testjs.impl.nl'),
+  metadataBase: new URL('https://nextjstryout2.impl.nl'),
   title: { default: APP_NAME, template: '%s | testjs' },
   description: 'Next.js + TypeScript template',
   applicationName: APP_NAME,
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     telephone: false,
   },
   openGraph: {
-    url: 'https://testjs.impl.nl',
+    url: 'https://nextjstryout2.impl.nl',
     title: 'testjs',
     description: 'Next.js + TypeScript template',
   },

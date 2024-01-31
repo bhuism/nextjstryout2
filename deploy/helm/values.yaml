@@ -1,0 +1,49 @@
+controllers:
+  main:
+    containers:
+      main:
+        image:
+          repository: europe-west4-docker.pkg.dev/impl-383520/docker/nextjstryout2
+          tag: "latest"
+          pullPolicy: Always
+        probes:
+          liveness:
+            type: HTTP
+            path: /
+            port: 3000
+          readiness:
+            type: HTTP
+            path: /
+            port: 3000
+          startup:
+            enabled: true
+        resources:
+          limits:
+            cpu: 100m
+            memory: 64Mi
+          requests:
+            cpu: 100m
+            memory: 64Mi
+
+service:
+  main:
+    ports:
+      http:
+        port: 3000
+      liveness-port:
+        port: 3000
+
+ingress:
+  main:
+    enabled: true
+    className: nginx
+    annotations:
+      external-dns.alpha.kubernetes.io/target: 55c7affb-4f19-426b-aa56-cfa47940ee99.cfargotunnel.com
+    hosts:
+      - host: nextjstryout2.impl.nl
+        paths:
+          - path: /
+            pathType: ImplementationSpecific
+            service:
+              name: main
+    tls: {}

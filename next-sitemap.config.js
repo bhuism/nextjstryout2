@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 const NextSitemapConfig = {
-  siteUrl: "https://testjs.impl.nl",
+  siteUrl: "https://nextjstryout2.impl.nl",
   generateRobotsTxt: true,
 };
 
