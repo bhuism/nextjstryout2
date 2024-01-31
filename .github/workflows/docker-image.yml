@@ -12,12 +12,11 @@ env:
 
 jobs:
   build-and-push-image:
-
     runs-on: ubuntu-latest
 
-    permissions:
-      contents: read
-      packages: write
+    concurrency:
+      group: docker_build
+      cancel-in-progress: true
 
     steps:
       - name: Checkout repository
@@ -58,5 +57,3 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-
-
