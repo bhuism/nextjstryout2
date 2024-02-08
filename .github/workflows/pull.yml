@@ -1,0 +1,22 @@
+name: Docker Image CI
+
+on:
+  pull_request:
+    branches: [ "main" ]
+
+env:
+  REGISTRY: europe-west4-docker.pkg.dev/impl-383520/docker
+  IMAGE_NAME: ${{ github.event.repository.name }}
+
+jobs:
+
+  build-and-push-image:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
+
