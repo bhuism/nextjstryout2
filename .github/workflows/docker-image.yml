@@ -13,7 +13,7 @@ env:
 
 jobs:
   run-cypress-test:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
     concurrency:
       group: cypress_test
@@ -42,8 +42,6 @@ jobs:
       contents: read
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
