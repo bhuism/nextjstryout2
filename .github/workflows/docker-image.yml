@@ -17,8 +17,14 @@ permissions:
   id-token: write
 
 jobs:
-  build-for-test:
+  build-and-test:
     runs-on: ubuntu-latest
+
+    concurrency:
+      group: cypress_test
+      cancel-in-progress: true
+
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -37,23 +43,13 @@ jobs:
           key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
-      - name: Install dependencies
+
+              - name: Install dependencies
         run: npm ci
 
       - name: Build with Next.js
         run: npm run build
 
-  run-cypress-test:
-
-    needs: build-for-test
-
-    runs-on: ubuntu-latest
-
-    concurrency:
-      group: cypress_test
-      cancel-in-progress: true
-
-    steps:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
@@ -67,7 +63,7 @@ jobs:
 
   build-and-push-docker-image:
 
-    needs: run-cypress-test
+    needs: build-and-test
 
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
 
