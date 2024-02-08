@@ -46,7 +46,7 @@ jobs:
 
               - name: Install dependencies
         
-      - name: run ci
+      - name: Run npm ci
         run: npm ci
 
       - name: Build with Next.js
@@ -57,7 +57,7 @@ jobs:
         with:
           record: false
           quiet: false
-          start: npm start
+          start: node .next/standalone/server.js
           wait-on: http://localhost:3000
           wait-on-timeout: 15
         env:
