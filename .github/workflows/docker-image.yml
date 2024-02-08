@@ -55,7 +55,8 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           record: false
-          quiet: false
+          quiet: false  
+          start: npm start
           wait-on: http://localhost:3000
           wait-on-timeout: 15
         env:
