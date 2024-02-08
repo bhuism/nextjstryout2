@@ -9,14 +9,14 @@
     "postbuild": "next-sitemap --config next-sitemap.config.js",
     "start": "next start",
     "lint": "next lint",
-    "lint:fix": "eslint src --fix && pnpm format",
+    "lint:fix": "eslint src --fix && npm format",
     "cypress:open": "cypress open",
     "type-check": "tsc --noEmit",
     "e2e": "start-server-and-test dev http://localhost:3000 \"cypress open --e2e\"",
     "e2e:headless": "start-server-and-test dev http://localhost:3000 \"cypress run --e2e\"",
     "format": "prettier --write src",
-    "up-interactive": "pnpm up -i",
-    "up-latest": "pnpm up-interactive -L",
+    "up-interactive": "npm up -i",
+    "up-latest": "npm up-interactive -L",
     "release": "cross-env standard-version",
     "push-release": "git push --follow-tags origin main"
   },
@@ -54,7 +54,6 @@
     "typescript": "^5.3.3"
   },
   "engines": {
-    "node": ">=20.x.x",
-    "pnpm": ">=8"
+    "node": ">=20.x.x"
   }
 }
