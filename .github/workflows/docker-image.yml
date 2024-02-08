@@ -1,4 +1,4 @@
-name: Build Docker Image
+name: Build and Push Docker Image
 
 on:
   push:
@@ -9,7 +9,7 @@ env:
   IMAGE_NAME: ${{ github.event.repository.name }}
 
 jobs:
-  build-and-push-image:
+  build-and-push-docker-image:
     runs-on: ubuntu-latest
 
     concurrency:
