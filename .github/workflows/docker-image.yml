@@ -56,6 +56,8 @@ jobs:
         with:
           record: false
           quiet: false
+          wait-on: http://localhost:3000
+          wait-on-timeout: 15
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
