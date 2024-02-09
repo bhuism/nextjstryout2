@@ -1,3 +1,5 @@
+'use client';
+
 import { RocketLaunch } from '@mui/icons-material';
 import DnsRoundedIcon from '@mui/icons-material/DnsRounded';
 import HomeIcon from '@mui/icons-material/Home';
