@@ -1,15 +1,17 @@
 controllers:
   main:
-
     replicas: 3
 
     containers:
       main:
         image:
           repository: europe-west4-docker.pkg.dev/impl-383520/docker/nextjstryout2
-          tag: "latest"
+          tag: 'latest'
           pullPolicy: Always
-        
+
+        securityContext:
+          allowPrivilegeEscalation: false
+
         probes:
           liveness:
             type: HTTP
