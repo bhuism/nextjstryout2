@@ -45,7 +45,7 @@ jobs:
         run: npm ci
 
       - name: Build with Next.js
-        run: npm run build && cp -R public .next/standalone/ && cp -R .next/static .next/standalone/.next/
+        run: npm run build
 
       - name: Cypress run
         uses: cypress-io/github-action@v6
