@@ -13,6 +13,8 @@ WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
+ARG SHORT_SHA
+
 RUN npm run build
 
 FROM base AS runner

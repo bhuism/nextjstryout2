@@ -5,7 +5,7 @@
   "author": "bhuism",
   "scripts": {
     "dev": "NEXT_PUBLIC_GIT_SHA=$(git rev-parse --short HEAD) next dev",
-    "build": "next build && cp -R public .next/standalone/ && cp -Rf .next/static .next/standalone/.next/",
+    "build": "next build",
     "postbuild": "next-sitemap --config next-sitemap.config.js",
     "start": "NEXT_PUBLIC_GIT_SHA=$(git rev-parse --short HEAD) next start",
     "lint": "next lint",

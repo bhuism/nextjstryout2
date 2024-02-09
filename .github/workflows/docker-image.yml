@@ -45,7 +45,7 @@ jobs:
         run: npm ci
 
       - name: Build with Next.js
-        run: npm run build
+        run: npm run build && cp -R public .next/standalone/ && cp -Rf .next/static .next/standalone/.next/
 
       - name: Cypress run
         uses: cypress-io/github-action@v6
@@ -108,3 +108,4 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+          build-args: SHORT_SHA=${{ github.sha }}
