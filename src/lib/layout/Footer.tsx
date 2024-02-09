@@ -16,10 +16,10 @@ const Footer = () => (
     {new Date().getFullYear()}{' '}
     <Link
       color="inherit"
-      href={`https://github.com/bhuism/nextjstryout2/tree/${process.env.COMMIT_HASH}`}
+      href={`https://github.com/bhuism/nextjstryout2/tree/${process.env.NEXT_PUBLIC_GIT_SHA}`}
       underline="hover"
     >
-      {process.env.COMMIT_HASH}
+      {process.env.NEXT_PUBLIC_GIT_SHA}
     </Link>
   </Typography>
 );

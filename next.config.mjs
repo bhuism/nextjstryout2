@@ -1,10 +1,3 @@
-import childProcess from 'child_process';
-
-const commitHash = childProcess
-  .execSync('git log --pretty=format:"%h" -n1')
-  .toString()
-  .trim();
-
 /** @type {import('next').NextConfig} */
 const config = {
   swcMinify: true,
@@ -13,8 +6,18 @@ const config = {
     dirs: ['src'],
   },
   output: 'standalone',
-  env: {
-    COMMIT_HASH: commitHash,
+  async headers() {
+    return [
+      {
+        source: '/',
+        headers: [
+          {
+            key: 'myversion',
+            value: process.env.NEXT_PUBLIC_GIT_SHA,
+          },
+        ],
+      },
+    ];
   },
 };
 
