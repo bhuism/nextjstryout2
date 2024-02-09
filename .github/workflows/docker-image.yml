@@ -4,7 +4,7 @@ on:
   push:
     branches: ['main']
   pull_request:
-    branches: [ "main" ]
+    branches: ['main']
   workflow_dispatch:
 
 env:
@@ -20,10 +20,6 @@ jobs:
   build-and-test:
     runs-on: ubuntu-latest
 
-    concurrency:
-      group: cypress_test
-      cancel-in-progress: true
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -31,7 +27,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: "20"
+          node-version: '20'
           cache: npm
 
       - name: Restore cache
@@ -44,7 +40,7 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
 
               - name: Install dependencies
-        
+
       - name: Run npm ci
         run: npm ci
 
@@ -55,7 +51,7 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           record: false
-          quiet: false  
+          quiet: false
           start: npm start
           wait-on: http://localhost:3000
           wait-on-timeout: 15
@@ -63,7 +59,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   build-and-push-docker-image:
-
     needs: build-and-test
 
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
