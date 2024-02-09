@@ -6,7 +6,7 @@ controllers:
       main:
         image:
           repository: europe-west4-docker.pkg.dev/impl-383520/docker/nextjstryout2
-          tag: 'latest'
+          tag: latest
           pullPolicy: Always
 
         securityContext:
