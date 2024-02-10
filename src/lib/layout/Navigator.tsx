@@ -25,7 +25,7 @@ const categories = [
   {
     id: 'Build',
     children: [
-      { id: 'Authentication', icon: <PeopleIcon />, page: '/authentication' },
+      { id: 'Authentication', icon: <PeopleIcon />, page: '/' },
       { id: 'Database', icon: <DnsRoundedIcon />, page: '/database' },
       { id: 'Storage', icon: <PermMediaOutlinedIcon />, page: '/storage' },
       { id: 'Hosting', icon: <PublicIcon />, page: '/hosting' },
