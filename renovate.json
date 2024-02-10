@@ -1,9 +1,8 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:base", "group:all"],
-  "stabilityDays": 2,
   "timezone": "Europe/Amsterdam",
-
+  "platform": "github",
   "packageRules": [
     {
       "matchUpdateTypes": ["major", "minor", "patch"],
