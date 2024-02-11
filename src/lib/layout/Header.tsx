@@ -92,6 +92,10 @@ export default function Header(props: HeaderProps) {
                 variant="outlined"
                 color="inherit"
                 size="small"
+                onClick={() =>
+                  (document.location.href =
+                    'https://github.com/bhuism/nextjstryout2')
+                }
               >
                 Web setup
               </Button>
