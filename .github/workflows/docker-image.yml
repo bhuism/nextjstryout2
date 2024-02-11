@@ -11,7 +11,7 @@ on:
     branches:
       - "main"
 
-      env:
+env:
   REGISTRY: europe-west4-docker.pkg.dev/impl-383520/docker
   IMAGE_NAME: ${{ github.event.repository.name }}
 
