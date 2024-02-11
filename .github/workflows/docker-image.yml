@@ -93,12 +93,17 @@ jobs:
         id: meta
         uses: docker/metadata-action@8e5442c4ef9f78752691e2d8f8d19755c6f78e81
         with:
-          # tags: |
-          #   type=raw,value=latest,enable={{is_default_branch}}
-          #   type=semver,pattern={{version}}
-          #   type=ref,enable=true,event=tag
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
-
+          tags: |
+            type=raw,value=latest,enable={{is_default_branch}}
+            type=schedule
+            type=ref,event=branch
+            type=ref,event=pr
+            type=semver,pattern={{version}}
+            type=semver,pattern={{major}}.{{minor}}
+            type=semver,pattern={{major}}
+            type=sha
+            type=ref,event=tag
       - name: Build and push Docker image
         uses: docker/build-push-action@4976231911ebf5f32aad765192d35f942aa48cb8
         with:
