@@ -21,6 +21,8 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import { usePathname, useRouter } from 'next/navigation';
 
+import '../../lib/styles/globals.css';
+
 const categories = [
   {
     id: 'Build',
@@ -70,6 +72,7 @@ export default function Navigator(props: DrawerProps) {
         <ListItem
           sx={{ ...item, ...itemCategory, fontSize: 22, color: '#fff' }}
           onClick={() => router.push('/')}
+          className={'clickable'}
         >
           Paperbase
         </ListItem>
@@ -77,6 +80,7 @@ export default function Navigator(props: DrawerProps) {
         <ListItem
           sx={{ ...item, ...itemCategory }}
           onClick={() => router.push('/')}
+          className={'clickable'}
         >
           <ListItemIcon>
             <HomeIcon />

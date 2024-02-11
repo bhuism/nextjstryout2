@@ -1,1 +1,3 @@
-/* Global Styling here */
+.clickable {
+  cursor: pointer;
+}

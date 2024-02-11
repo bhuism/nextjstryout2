@@ -1,5 +1,4 @@
 'use client';
-'use client';
 
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';

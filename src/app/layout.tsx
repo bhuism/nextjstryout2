@@ -6,8 +6,6 @@ import type { PropsWithChildren } from 'react';
 import Providers from '~/app/providers';
 import Layout from '~/lib/layout';
 
-const APP_NAME = 'nextjstryout2';
-
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
