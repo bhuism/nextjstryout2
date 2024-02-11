@@ -6,8 +6,8 @@ controllers:
       main:
         image:
           repository: europe-west4-docker.pkg.dev/impl-383520/docker/nextjstryout2
-          tag: latest
-          pullPolicy: Always
+          tag: 0.1.23
+          pullPolicy: IfNotPresent
 
         securityContext:
           allowPrivilegeEscalation: false
