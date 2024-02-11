@@ -74,7 +74,7 @@ export default function Navigator(props: DrawerProps) {
           onClick={() => router.push('/')}
           className={'clickable'}
         >
-          Paperbase
+          NextJsTryOut2
         </ListItem>
 
         <ListItem
