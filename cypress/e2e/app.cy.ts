@@ -3,6 +3,6 @@ describe('Navigation', () => {
     cy.visit('http://localhost:3000/');
     cy.get('span').contains('Test Page').click();
     cy.url().should('include', '/testpage');
-    cy.get('p').contains('Tezt Page');
+    cy.get('p').contains('Test Page');
   });
 });
