@@ -1,13 +1,17 @@
 name: Test and Build and Push Docker Image
 
 on:
-  push:
-    branches: ['main']
-  pull_request:
-    branches: ['main']
   workflow_dispatch:
+  push:
+    branches:
+      - "**"
+    tags:
+      - "v*.*.*"
+  pull_request:
+    branches:
+      - "main"
 
-env:
+      env:
   REGISTRY: europe-west4-docker.pkg.dev/impl-383520/docker
   IMAGE_NAME: ${{ github.event.repository.name }}
 
