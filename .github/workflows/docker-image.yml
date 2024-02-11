@@ -4,12 +4,12 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - "main"
+      - 'main'
     tags:
-      - "v*.*.*"
+      - 'v*.*.*'
   pull_request:
     branches:
-      - "main"
+      - 'main'
 
 env:
   REGISTRY: europe-west4-docker.pkg.dev/impl-383520/docker
@@ -21,6 +21,16 @@ permissions:
   id-token: write
 
 jobs:
+  prJob:
+    name: Print info
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print GitHub event action
+        run: |
+          echo "githuv.event.action: ${{ github.event.action }}"
+          echo "github.event_name: ${{ github.event_name }}"
+          echo "github.ref: ${{ github.ref }}"
+
   build-and-test:
     runs-on: ubuntu-latest
 
