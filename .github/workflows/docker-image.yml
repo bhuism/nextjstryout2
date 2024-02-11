@@ -99,8 +99,7 @@ jobs:
         with:
           tags: |
             type=raw,value=latest,enable={{is_default_branch}}
-            type=sha
-            type=pep440,pattern={{version}}
+            type=semver,pattern={{version}}
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
 
       - name: Build and push Docker image
