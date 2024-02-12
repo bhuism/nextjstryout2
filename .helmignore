@@ -31,7 +31,7 @@ tests/
 
 src
 node_modules
-.*
+.*.*
 public
 *.json
 *.js
