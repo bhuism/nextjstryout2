@@ -1,0 +1,10 @@
+{
+  "packages": {
+    ".": {
+      "release-type": "node"
+    },
+    "helm/deploy": {
+      "release-type": "helm"
+    }
+  }
+}
