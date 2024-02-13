@@ -4,10 +4,6 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [1.0.4](https://github.com/bhuism/nextjstryout2/compare/v1.0.3...v1.0.4) (2024-02-13)
 
-
-## [1.0.4](https://github.com/bhuism/nextjstryout2/compare/nextjstryout2-v1.0.3...nextjstryout2-v1.0.4) (2024-02-13)
-
-
 ### Bug Fixes
 
 * **deps:** update all dependencies to v5.15.10 ([49a0496](https://github.com/bhuism/nextjstryout2/commit/49a0496161104a190d1bc1321c1b4d31815f59db))
