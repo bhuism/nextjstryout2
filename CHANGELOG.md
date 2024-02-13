@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.1](https://github.com/bhuism/nextjstryout2/compare/nextjstryout2-v1.0.0...nextjstryout2-v1.0.1) (2024-02-13)
+
+
+### Bug Fixes
+
+* remove menu ([6225b03](https://github.com/bhuism/nextjstryout2/commit/6225b03746f7997b77837450e2c36ae4a6c369c5))
+
 ### [1.0.2](https://github.com/bhuism/nextjstryout2/compare/v1.0.1...v1.0.2) (2024-02-13)
 
 ### [1.0.1](https://github.com/bhuism/nextjstryout2/compare/v0.1.25...v1.0.1) (2024-02-13)
