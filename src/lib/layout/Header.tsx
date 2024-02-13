@@ -2,6 +2,7 @@
 
 import HelpIcon from '@mui/icons-material/Help';
 import NotificationsIcon from '@mui/icons-material/Notifications';
+import { ListItemText } from '@mui/material';
 import AppBar from '@mui/material/AppBar';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
@@ -133,9 +134,12 @@ export default function Header(props: HeaderProps) {
             </Grid>
             <Grid item>
               <IconButton color="inherit" sx={{ p: 0.5 }}>
-                <Avatar src="/avatar.webp" alt="My Avatar" />
+                <Avatar src={auth.user?.profile.picture} alt="My Avatar" />
               </IconButton>
             </Grid>
+          </Grid>
+          <Grid item>
+            <ListItemText>{auth.user?.profile.name}</ListItemText>
           </Grid>
         </Toolbar>
       </AppBar>
