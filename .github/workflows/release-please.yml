@@ -21,5 +21,7 @@ jobs:
         uses: google-github-actions/release-please-action@v4
         id: release
         with:
+          token: ${{ secrets.MY_RELEASE_PLEASE_TOKEN }}
           release-type: helm
           path: deploy/helm
+
