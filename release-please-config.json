@@ -1,14 +1,15 @@
 {
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+  "include-component-in-tag": false,
   "packages": {
+    "deploy/helm": {
+      "release-type": "helm",
+      "component": "helm"
+    },
     ".": {
       "release-type": "node",
       "exclude-paths": ["deploy"],
       "component": "node"
-    },
-    "deploy/helm": {
-      "release-type": "helm",
-      "component": "helm"
     }
   },
   "plugins": [
