@@ -74,7 +74,7 @@ jobs:
   build-and-push-docker-image:
     needs: build-and-test
 
-    runs-on: ubuntu-latest
+    runs-on: buildjet-2vcpu-ubuntu-2204-arm
 
     if: github.event_name != 'pull_request'
 
