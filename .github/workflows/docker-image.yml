@@ -6,7 +6,7 @@ on:
     branches:
       - 'main'
     tags:
-      - 'v*.*.*'
+      - 'node-v*.*.*'
   pull_request:
     branches:
       - 'main'
@@ -88,7 +88,7 @@ jobs:
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           tags: |
-            type=semver,pattern={{version}}
+            type=match,pattern=node-v\d.\d.\d
             type=raw,value=latest,enable={{is_default_branch}}
             type=sha
 
