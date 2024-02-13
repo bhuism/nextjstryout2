@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/bhuism/nextjstryout2/compare/node-v1.1.0...node-v1.2.0) (2024-02-13)
+
+
+### Features
+
+* remove qemu ([1c2b85f](https://github.com/bhuism/nextjstryout2/commit/1c2b85fd7148698e964a04ccdb57c35321e65a47))
+
 ## [1.1.0](https://github.com/bhuism/nextjstryout2/compare/node-v1.0.9...node-v1.1.0) (2024-02-13)
 
 
