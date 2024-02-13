@@ -24,5 +24,4 @@ jobs:
         id: release
         with:
           token: ${{ secrets.MY_RELEASE_PLEASE_TOKEN }}
-          include-component-in-tag: false
           
