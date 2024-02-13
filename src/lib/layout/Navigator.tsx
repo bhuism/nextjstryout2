@@ -25,7 +25,7 @@ import '../../lib/styles/globals.css';
 
 const categories = [
   {
-    id: 'Build',
+    id: null,
     children: [
       { id: 'Authentication', icon: <PeopleIcon />, page: '/' },
       { id: 'Database', icon: <DnsRoundedIcon />, page: '/database' },
@@ -66,25 +66,21 @@ export default function Navigator(props: DrawerProps) {
           onClick={() => router.push('/')}
           className={'clickable'}
         >
-          NextJsTryOut2
-        </ListItem>
-
-        <ListItem
-          sx={{ ...item, ...itemCategory }}
-          onClick={() => router.push('/')}
-          className={'clickable'}
-        >
           <ListItemIcon>
             <HomeIcon />
           </ListItemIcon>
-          <ListItemText>Project Overview</ListItemText>
+          <ListItemText>NextJsTryOut2</ListItemText>
         </ListItem>
 
         {categories.map(({ id, children }) => (
           <Box key={id} sx={{ bgcolor: '#101F33' }}>
-            <ListItem sx={{ py: 2, px: 3 }}>
-              <ListItemText sx={{ color: '#fff' }}>{id}</ListItemText>
-            </ListItem>
+            {id ? (
+              <ListItem sx={{ py: 2, px: 3 }}>
+                <ListItemText sx={{ color: '#fff' }}>{id}</ListItemText>
+              </ListItem>
+            ) : (
+              <></>
+            )}
             {children.map(({ id: childId, icon, page }) => (
               <ListItem
                 disablePadding

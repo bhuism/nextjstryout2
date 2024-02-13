@@ -26,7 +26,7 @@ export default function Header(props: HeaderProps) {
 
   return (
     <>
-      <AppBar color="primary" position="sticky" elevation={0}>
+      {/* <AppBar color="primary" position="sticky" elevation={0}>
         <Toolbar>
           <Grid container spacing={1} alignItems="center">
             <Grid sx={{ display: { sm: 'none', xs: 'block' } }} item>
@@ -71,7 +71,7 @@ export default function Header(props: HeaderProps) {
             </Grid>
           </Grid>
         </Toolbar>
-      </AppBar>
+      </AppBar> */}
       <AppBar
         component="div"
         color="primary"
@@ -107,10 +107,39 @@ export default function Header(props: HeaderProps) {
                 </IconButton>
               </Tooltip>
             </Grid>
+            <Grid item>
+              <Link
+                href="/"
+                variant="body2"
+                sx={{
+                  textDecoration: 'none',
+                  color: lightColor,
+                  '&:hover': {
+                    color: 'common.white',
+                  },
+                }}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Go to docs
+              </Link>
+            </Grid>
+            <Grid item>
+              <Tooltip title="Alerts • No alerts">
+                <IconButton color="inherit">
+                  <NotificationsIcon />
+                </IconButton>
+              </Tooltip>
+            </Grid>
+            <Grid item>
+              <IconButton color="inherit" sx={{ p: 0.5 }}>
+                <Avatar src="/avatar.webp" alt="My Avatar" />
+              </IconButton>
+            </Grid>
           </Grid>
         </Toolbar>
       </AppBar>
-      <AppBar
+      {/* <AppBar
         component="div"
         position="static"
         elevation={0}
@@ -122,7 +151,7 @@ export default function Header(props: HeaderProps) {
           <Tab label="Templates" />
           <Tab label="Usage" />
         </Tabs>
-      </AppBar>
+      </AppBar> */}
     </>
   );
 }
