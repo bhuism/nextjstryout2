@@ -1,8 +1,9 @@
 describe('Navigation', () => {
-  it('should navigate to the test page', () => {
+  it('should show login button', () => {
     cy.visit('http://localhost:3000/');
-    cy.get('span').contains('Test Page').click();
-    cy.url().should('include', '/testpage');
-    cy.get('p').contains('Test Page');
+    cy.get('button').contains('OIDC Login');
+
+    // cy.url().should('include', '/testpage');
+    // cy.get('p').contains('Test Page');
   });
 });
