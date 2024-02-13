@@ -4,13 +4,11 @@
     ".": {
       "release-type": "node",
       "exclude-paths": ["deploy"],
-      "component": "node",
-      "include-component-in-tag": false
+      "component": "node"
     },
     "deploy/helm": {
       "release-type": "helm",
-      "component": "helm",
-      "include-component-in-tag": false
+      "component": "helm"
     }
   },
   "plugins": [
