@@ -10,8 +10,7 @@
     ".": {
       "release-type": "node",
       "exclude-paths": ["deploy"],
-      "component": "node",
-      pat
+      "component": "node"
     }
   },
   "plugins": [
