@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.0.0 (2024-02-12)
+
+
+### Bug Fixes
+
+* **deps:** update all dependencies to v5.15.10 ([49a0496](https://github.com/bhuism/nextjstryout2/commit/49a0496161104a190d1bc1321c1b4d31815f59db))
+* **deps:** update all dependencies to v5.15.7 ([48d6b85](https://github.com/bhuism/nextjstryout2/commit/48d6b85554d5b29ecab206c08ea0bfed92bbaca8))
+* **deps:** update dependency @mui/material to v5.15.7 ([7817113](https://github.com/bhuism/nextjstryout2/commit/7817113d418122067ea3f5e15fd202c4caa5ee81))
+
 ### [0.1.25](https://github.com/bhuism/nextjstryout2/compare/v0.1.24...v0.1.25) (2024-02-12)
 
 ### [0.1.24](https://github.com/bhuism/nextjstryout2/compare/v0.1.23...v0.1.24) (2024-02-11)
