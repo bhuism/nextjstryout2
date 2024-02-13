@@ -22,6 +22,5 @@ jobs:
         id: release
         with:
           token: ${{ secrets.MY_RELEASE_PLEASE_TOKEN }}
-          release-type: helm
-          path: deploy/helm
-
+          include-component-in-tag: false
+          
