@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/bhuism/nextjstryout2/compare/node-v1.0.9...node-v1.1.0) (2024-02-13)
+
+
+### Features
+
+* better menu ([fbd0f5e](https://github.com/bhuism/nextjstryout2/commit/fbd0f5eefa0f842b83667e85fd7dddd60fbe04ad))
+
+
+### Bug Fixes
+
+* **deps:** update all dependencies to v5.15.10 ([49a0496](https://github.com/bhuism/nextjstryout2/commit/49a0496161104a190d1bc1321c1b4d31815f59db))
+* **deps:** update all dependencies to v5.15.7 ([48d6b85](https://github.com/bhuism/nextjstryout2/commit/48d6b85554d5b29ecab206c08ea0bfed92bbaca8))
+* **deps:** update dependency @mui/material to v5.15.7 ([7817113](https://github.com/bhuism/nextjstryout2/commit/7817113d418122067ea3f5e15fd202c4caa5ee81))
+* remove menu ([6225b03](https://github.com/bhuism/nextjstryout2/commit/6225b03746f7997b77837450e2c36ae4a6c369c5))
+
 ## [1.0.9](https://github.com/bhuism/nextjstryout2/compare/node-v1.0.8...node-v1.0.9) (2024-02-13)
 
 
