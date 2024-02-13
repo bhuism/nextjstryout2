@@ -10,7 +10,7 @@ controllers:
       main:
         image:
           repository: europe-west4-docker.pkg.dev/impl-383520/docker/nextjstryout2
-          tag: 0.1.25
+          tag: 1.0.1
           pullPolicy: IfNotPresent
 
         securityContext:
