@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.10.3](https://github.com/bhuism/nextjstryout2/compare/node-v1.10.2...node-v1.10.3) (2024-02-13)
+
+
+### Bug Fixes
+
+* trigger ([a677880](https://github.com/bhuism/nextjstryout2/commit/a677880367e1ad576293a66309e00223e5b031a9))
+
 ## [1.10.2](https://github.com/bhuism/nextjstryout2/compare/node-v1.10.1...node-v1.10.2) (2024-02-13)
 
 
