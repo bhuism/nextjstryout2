@@ -10,7 +10,7 @@ controllers:
       main:
         image:
           repository: europe-west4-docker.pkg.dev/impl-383520/docker/nextjstryout2
-          tag: 1.0.8
+          tag: { { .Chart.Version } }
           pullPolicy: IfNotPresent
 
         securityContext:
@@ -36,7 +36,7 @@ controllers:
             path: /
             port: 3000
             spec:
-              initialDelaySeconds: 5
+              initialDelaySeconds: 1
         resources:
           limits:
             cpu: 100m
