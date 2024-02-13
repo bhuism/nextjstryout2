@@ -20,3 +20,6 @@ jobs:
       - name: release-please
         uses: google-github-actions/release-please-action@v4
         id: release
+        with:
+          release-type: helm
+          path: deploy/helm
