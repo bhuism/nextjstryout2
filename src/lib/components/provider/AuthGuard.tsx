@@ -32,7 +32,7 @@ const Login = () => {
             sx={{ mt: 3, mb: 2 }}
             onClick={() => auth.signinRedirect()}
           >
-            OIDC Login
+            Login
           </Button>
         </Box>
       </Container>
