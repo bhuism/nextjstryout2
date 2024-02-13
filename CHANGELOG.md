@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.7.0](https://github.com/bhuism/nextjstryout2/compare/v1.6.0...v1.7.0) (2024-02-13)
+
+
+### Features
+
+* better menu ([fbd0f5e](https://github.com/bhuism/nextjstryout2/commit/fbd0f5eefa0f842b83667e85fd7dddd60fbe04ad))
+* remove qemu ([1c2b85f](https://github.com/bhuism/nextjstryout2/commit/1c2b85fd7148698e964a04ccdb57c35321e65a47))
+
+
+### Bug Fixes
+
+* **deps:** update all dependencies to v5.15.10 ([49a0496](https://github.com/bhuism/nextjstryout2/commit/49a0496161104a190d1bc1321c1b4d31815f59db))
+* **deps:** update all dependencies to v5.15.7 ([48d6b85](https://github.com/bhuism/nextjstryout2/commit/48d6b85554d5b29ecab206c08ea0bfed92bbaca8))
+* **deps:** update dependency @mui/material to v5.15.7 ([7817113](https://github.com/bhuism/nextjstryout2/commit/7817113d418122067ea3f5e15fd202c4caa5ee81))
+* move include-component-in-tag to config ([fd344e9](https://github.com/bhuism/nextjstryout2/commit/fd344e9fe17c623b89e5459a3275ea8d489c4620))
+* remove menu ([6225b03](https://github.com/bhuism/nextjstryout2/commit/6225b03746f7997b77837450e2c36ae4a6c369c5))
+* smaller menu ([ab78e56](https://github.com/bhuism/nextjstryout2/commit/ab78e56bd08b5dda864d6882d662a22b51201655))
+
 ## [1.6.0](https://github.com/bhuism/nextjstryout2/compare/v1.5.0...v1.6.0) (2024-02-13)
 
 
