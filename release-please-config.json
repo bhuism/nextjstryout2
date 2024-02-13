@@ -1,8 +1,24 @@
 {
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+  "include-component-in-tag": true,
+  "changelog-type": "github",
   "packages": {
     "deploy/helm": {
-      "release-type": "helm"
+      "release-type": "helm",
+      "component": "helm"
+    },
+    ".": {
+      "release-type": "node",
+      "exclude-paths": ["deploy"],
+      "component": "node",
+      pat
     }
-  }
+  },
+  "plugins": [
+    {
+      "type": "linked-versions",
+      "groupName": "One release to rull them all",
+      "components": ["node", "helm"]
+    }
+  ]
 }
