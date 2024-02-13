@@ -88,27 +88,6 @@ export default function Header(props: HeaderProps) {
               </Typography>
             </Grid>
             <Grid item>
-              <Button
-                sx={{ borderColor: lightColor }}
-                variant="outlined"
-                color="inherit"
-                size="small"
-                onClick={() =>
-                  (document.location.href =
-                    'https://github.com/bhuism/nextjstryout2')
-                }
-              >
-                Web setup
-              </Button>
-            </Grid>
-            <Grid item>
-              <Tooltip title="Help">
-                <IconButton color="inherit">
-                  <HelpIcon />
-                </IconButton>
-              </Tooltip>
-            </Grid>
-            <Grid item>
               <Link
                 onClick={() => auth.removeUser()}
                 variant="body2"
@@ -124,13 +103,6 @@ export default function Header(props: HeaderProps) {
               >
                 Logout
               </Link>
-            </Grid>
-            <Grid item>
-              <Tooltip title="Alerts • No alerts">
-                <IconButton color="inherit">
-                  <NotificationsIcon />
-                </IconButton>
-              </Tooltip>
             </Grid>
             <Grid item>
               <IconButton color="inherit" sx={{ p: 0.5 }}>
