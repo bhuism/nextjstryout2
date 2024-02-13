@@ -35,14 +35,6 @@ const categories = [
       { id: 'Test Page', icon: <RocketLaunch />, page: '/testpage' },
     ],
   },
-  {
-    id: 'Quality',
-    children: [
-      { id: 'Analytics', icon: <SettingsIcon />, page: '/analytics' },
-      { id: 'Performance', icon: <TimerIcon />, page: '/performance' },
-      { id: 'Test Lab', icon: <PhonelinkSetupIcon />, page: '/testlab' },
-    ],
-  },
 ];
 
 const item = {
