@@ -1,21 +1,19 @@
+name: Release Please
+
 on:
   push:
     branches:
       - 'main'
   workflow_dispatch:
-  
-      
+
 permissions:
   contents: write
   pull-requests: write
-
-name: Release Please
 
 jobs:
   release-please:
     runs-on: ubuntu-latest
     steps:
-
       - name: Check out code
         uses: actions/checkout@v4
 
@@ -24,4 +22,3 @@ jobs:
         id: release
         with:
           token: ${{ secrets.MY_RELEASE_PLEASE_TOKEN }}
-          
