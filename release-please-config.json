@@ -15,12 +15,4 @@
       "include-component-in-tag": false
     }
   }
-  // ,
-  // "plugins": [
-  //   {
-  //     "type": "linked-versions",
-  //     "groupName": "One release to rull them all",
-  //     "components": ["node", "helm"]
-  //   }
-  // ]
 }
