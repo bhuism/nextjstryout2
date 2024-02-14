@@ -5,14 +5,12 @@ controllers:
     rollingUpdate:
       unavailable: 1
       surge: 1
-
     containers:
       main:
         image:
           repository: europe-west4-docker.pkg.dev/impl-383520/docker/nextjstryout2
-          tag: 1.24.0
+          tag: 1.23.0
           pullPolicy: IfNotPresent
-
         securityContext:
           allowPrivilegeEscalation: false
           runAsNonRoot: true
@@ -21,7 +19,6 @@ controllers:
               - ALL
           seccompProfile:
             type: RuntimeDefault
-
         probes:
           liveness:
             type: HTTP
@@ -44,13 +41,11 @@ controllers:
           requests:
             cpu: 100m
             memory: 128Mi
-
 service:
   main:
     ports:
       http:
         port: 3000
-
 ingress:
   main:
     enabled: true
