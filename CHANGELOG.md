@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.10.4](https://github.com/bhuism/nextjstryout2/compare/node-v1.10.3...node-v1.10.4) (2024-02-14)
+
+
+### Bug Fixes
+
+* remove group ([d7dfef0](https://github.com/bhuism/nextjstryout2/commit/d7dfef05686be945e789f9275d547c404dde7132))
+* trigger ([1132b03](https://github.com/bhuism/nextjstryout2/commit/1132b0352c01f76c3bc0209e0199f85dffc2b11e))
+
 ## [1.10.3](https://github.com/bhuism/nextjstryout2/compare/node-v1.10.2...node-v1.10.3) (2024-02-13)
 
 
