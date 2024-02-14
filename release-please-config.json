@@ -1,6 +1,5 @@
 {
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
-  "pull-request-title-pattern": "chore(release): release v${version}",
   "packages": {
     ".": {
       "release-type": "node",
@@ -15,12 +14,13 @@
       "separate-pull-requests": true,
       "include-component-in-tag": false
     }
-  },
-  "plugins": [
-    {
-      "type": "linked-versions",
-      "groupName": "One release to rull them all",
-      "components": ["node", "helm"]
-    }
-  ]
+  }
+  // ,
+  // "plugins": [
+  //   {
+  //     "type": "linked-versions",
+  //     "groupName": "One release to rull them all",
+  //     "components": ["node", "helm"]
+  //   }
+  // ]
 }
