@@ -1,18 +1,17 @@
 {
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
   "pull-request-title-pattern": "chore(release): release v${version}",
-  "separate-pull-requests": false,
+  "separate-pull-requests": true,
+  "include-component-in-tag": false,
   "packages": {
     ".": {
       "release-type": "node",
       "exclude-paths": ["deploy"],
-      "component": "node",
-      "include-component-in-tag": false
+      "component": "node"
     },
     "deploy/helm": {
       "release-type": "helm",
-      "component": "helm",
-      "include-component-in-tag": false
+      "component": "helm"
     }
   },
   "plugins": [
