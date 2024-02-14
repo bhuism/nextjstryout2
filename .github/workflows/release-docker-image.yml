@@ -16,7 +16,10 @@ permissions:
 
 jobs:
   build-and-push-docker-image:
+
     runs-on: ubuntu-latest
+
+    name: Build and Push Docker Image
 
     if: github.event_name == 'push' && startsWith(github.event.ref, 'refs/tags/v')
 
