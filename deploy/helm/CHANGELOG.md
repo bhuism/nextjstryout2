@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.18.0](https://github.com/bhuism/nextjstryout2/compare/helm-v1.17.0...helm-v1.18.0) (2024-02-14)
+
+
+### Bug Fixes
+
+* trigger ([40e7261](https://github.com/bhuism/nextjstryout2/commit/40e726123762390f92d869960ec61b4274f1e409))
+
 ## [1.17.0](https://github.com/bhuism/nextjstryout2/compare/helm-v1.10.5...helm-v1.17.0) (2024-02-14)
 
 
