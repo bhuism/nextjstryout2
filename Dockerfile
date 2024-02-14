@@ -13,7 +13,8 @@ WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
-ARG SHORT_SHA
+ARG GIT_SHA=git_sha
+ARG RELEASE=release
 
 RUN npm run build
 

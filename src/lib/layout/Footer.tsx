@@ -18,15 +18,23 @@ const Footer = () => (
       color="inherit"
       href={
         'https://github.com/bhuism/nextjstryout2/tree/' +
-        (process.env.NEXT_PUBLIC_GIT_SHA
-          ? process.env.NEXT_PUBLIC_GIT_SHA
-          : null)
+        process.env.NEXT_PUBLIC_GIT_SHA
       }
       underline="hover"
     >
       {process.env.NEXT_PUBLIC_GIT_SHA
         ? process.env.NEXT_PUBLIC_GIT_SHA.substring(0, 8)
         : null}
+    </Link>{' '}
+    <Link
+      color="inherit"
+      href={
+        'https://github.com/bhuism/nextjstryout2/releases/tag/v' +
+        process.env.NEXT_PUBLIC_RELEASE
+      }
+      underline="hover"
+    >
+      {process.env.NEXT_PUBLIC_RELEASE}
     </Link>
   </Typography>
 );

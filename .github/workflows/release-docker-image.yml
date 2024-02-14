@@ -1,4 +1,4 @@
-name: Build and Push Release Docker Image
+name: Build and Push Docker Image
 
 on:
   push:
@@ -16,7 +16,6 @@ permissions:
 
 jobs:
   build-and-push-docker-image:
-
     runs-on: ubuntu-latest
 
     if: github.event_name == 'push' && startsWith(github.event.ref, 'refs/tags/v')
@@ -62,4 +61,4 @@ jobs:
           platforms: linux/arm64,linux/amd64
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-          build-args: SHORT_SHA=${{ github.sha }}
+          build-args: GIT_SHA=${{ github.sha }} RELEASE=${{github.ref.name}}

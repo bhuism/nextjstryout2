@@ -12,8 +12,12 @@ const config = {
         source: '/',
         headers: [
           {
-            key: 'myversion',
+            key: 'mysha',
             value: process.env.NEXT_PUBLIC_GIT_SHA,
+          },
+          {
+            key: 'myversion',
+            value: process.env.NEXT_PUBLIC_RELEASE,
           },
         ],
       },
