@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.5](https://github.com/bhuism/nextjstryout2/compare/helm-v1.10.4...helm-v1.10.5) (2024-02-14)
+
+
+### Miscellaneous Chores
+
+* **helm:** Synchronize One release to rull them all versions
+
 ## [1.10.4](https://github.com/bhuism/nextjstryout2/compare/helm-v1.10.3...helm-v1.10.4) (2024-02-14)
 
 
