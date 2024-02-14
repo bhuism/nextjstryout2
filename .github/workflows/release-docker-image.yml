@@ -16,7 +16,6 @@ permissions:
 
 jobs:
   build-and-push-docker-image:
-
     runs-on: ubuntu-latest
 
     name: Build and Push Docker Image
@@ -64,4 +63,6 @@ jobs:
           platforms: linux/arm64,linux/amd64
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-          build-args: GIT_SHA=${{ github.sha }} RELEASE=${{github.ref.name}}
+          build-args: |
+            GIT_SHA=${{ github.sha }}
+            RELEASE=${{ github.ref.name }}
