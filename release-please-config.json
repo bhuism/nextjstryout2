@@ -1,13 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
   "release-type": "node",
-  "plugins": [
-    {
-      "type": "linked-versions",
-      "groupName": "One release to rule them all",
-      "components": ["node", "helm"]
-    }
-  ],
   "extra-files": [
     {
       "type": "yaml",
