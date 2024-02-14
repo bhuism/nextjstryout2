@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.24.1](https://github.com/bhuism/nextjstryout2/compare/v1.24.0...v1.24.1) (2024-02-14)
+
+
+### Bug Fixes
+
+* Add release, separate test workflow ([649d66e](https://github.com/bhuism/nextjstryout2/commit/649d66eb4922447cff2998b45e25d59558deaedf))
+* Better names ([7020744](https://github.com/bhuism/nextjstryout2/commit/70207441daf2ae6773d822625902b8e32e57d568))
+* Better workflow ([06628ce](https://github.com/bhuism/nextjstryout2/commit/06628ce88e987769af870134cbf158e4c9209d7e))
+* Move to github builders ([6f2df3a](https://github.com/bhuism/nextjstryout2/commit/6f2df3af6bbd8a3eefa3709b7fe28f75ed5c17d0))
+* Names ([c40b349](https://github.com/bhuism/nextjstryout2/commit/c40b349f6bdb6fa5b12b6bc0677049611d0189f7))
+* Remove print info ([61d6843](https://github.com/bhuism/nextjstryout2/commit/61d684334c62756f4489881189e8d95b1cf722f3))
+* Search less ([e04e443](https://github.com/bhuism/nextjstryout2/commit/e04e4436cd608d2fe113fcdbf4000f04b1786c67))
+
 ## [1.24.0](https://github.com/bhuism/nextjstryout2/compare/v1.23.0...v1.24.0) (2024-02-14)
 
 
