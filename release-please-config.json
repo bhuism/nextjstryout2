@@ -1,16 +1,26 @@
 {
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
   "release-type": "node",
-  "extra-files": [
-    {
-      "type": "yaml",
-      "path": "deploy/helm/Chart.yaml",
-      "jsonpath": "$.version"
-    },
-    {
-      "type": "yaml",
-      "path": "deploy/helm/values.yaml",
-      "jsonpath": "$.controllers.main.containers.main.image.tag"
+
+  "packages": {
+    ".": {
+      "release-type": "node",
+      "component": "nextjstryout2",
+      "package-name": "nextjstryout2",
+      "include-component-in-tag": false,
+      "extra-files": [
+        {
+          "type": "yaml",
+          "path": "deploy/helm/Chart.yaml",
+          "jsonpath": "$.version"
+        },
+        {
+          "type": "yaml",
+          "path": "deploy/helm/values.yaml",
+          "jsonpath": "$.controllers.main.containers.main.image.tag"
+        }
+      ]
     }
-  ]
+  },
+  "plugins": ["sentence-case"]
 }
