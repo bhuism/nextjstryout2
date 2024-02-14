@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.24.2](https://github.com/bhuism/nextjstryout2/compare/v1.24.1...v1.24.2) (2024-02-14)
+
+
+### Bug Fixes
+
+* Better nameing ([6156661](https://github.com/bhuism/nextjstryout2/commit/6156661f8d41bb1256f43131dd88503bd50174c4))
+* Build-args ([8485e46](https://github.com/bhuism/nextjstryout2/commit/8485e464151dccb3f2adc41ca2da5031c44d11be))
+
 ## [1.24.1](https://github.com/bhuism/nextjstryout2/compare/v1.24.0...v1.24.1) (2024-02-14)
 
 
