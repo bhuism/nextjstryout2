@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.24.8](https://github.com/bhuism/nextjstryout2/compare/v1.24.7...v1.24.8) (2024-02-15)
+
+
+### Bug Fixes
+
+* Add version provider ([f2e4922](https://github.com/bhuism/nextjstryout2/commit/f2e492294d0f9fd1612aa9721b7b88290ab9d3ae))
+* Use client ([b9720ce](https://github.com/bhuism/nextjstryout2/commit/b9720ce309b14121e237f69a0432df8238c5ebb8))
+
 ## [1.24.7](https://github.com/bhuism/nextjstryout2/compare/v1.24.6...v1.24.7) (2024-02-15)
 
 
