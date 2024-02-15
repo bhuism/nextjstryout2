@@ -1,3 +1,5 @@
+'use client';
+
 import { PropsWithChildren, default as React } from 'react';
 import ReleaseContext from '../context/ReleaseContext';
 
