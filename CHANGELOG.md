@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.24.6](https://github.com/bhuism/nextjstryout2/compare/v1.24.5...v1.24.6) (2024-02-15)
+
+
+### Bug Fixes
+
+* Drawer ([d764129](https://github.com/bhuism/nextjstryout2/commit/d764129962fe4540dcdc6d164e424eba182df19b))
+
 ## [1.24.5](https://github.com/bhuism/nextjstryout2/compare/v1.24.4...v1.24.5) (2024-02-15)
 
 
