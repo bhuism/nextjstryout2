@@ -35,6 +35,7 @@ const Layout = ({ children }: PropsWithChildren) => {
             variant="temporary"
             open={mobileOpen}
             onClose={handleDrawerToggle}
+            closeDrawer={() => setMobileOpen(false)}
           />
         )}
         <Navigator

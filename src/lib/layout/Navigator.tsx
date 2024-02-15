@@ -4,16 +4,12 @@ import { RocketLaunch } from '@mui/icons-material';
 import DnsRoundedIcon from '@mui/icons-material/DnsRounded';
 import HomeIcon from '@mui/icons-material/Home';
 import PeopleIcon from '@mui/icons-material/People';
-import PhonelinkSetupIcon from '@mui/icons-material/PhonelinkSetup';
 import PermMediaOutlinedIcon from '@mui/icons-material/PhotoSizeSelectActual';
 import PublicIcon from '@mui/icons-material/Public';
-import SettingsIcon from '@mui/icons-material/Settings';
 import SettingsEthernetIcon from '@mui/icons-material/SettingsEthernet';
-import TimerIcon from '@mui/icons-material/Timer';
 import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
-import type { DrawerProps } from '@mui/material/Drawer';
-import Drawer from '@mui/material/Drawer';
+import Drawer, { DrawerProps } from '@mui/material/Drawer';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
@@ -52,9 +48,11 @@ const itemCategory = {
   px: 3,
 };
 
-export default function Navigator(props: DrawerProps) {
-  const { ...other } = props;
+export interface NavigatorProps extends DrawerProps {
+  closeDrawer?: () => void;
+}
 
+export default function Navigator({ closeDrawer, ...other }: NavigatorProps) {
   const router = useRouter();
   const pathname = usePathname();
 
@@ -85,7 +83,10 @@ export default function Navigator(props: DrawerProps) {
               <ListItem
                 disablePadding
                 key={childId}
-                onClick={() => (page ? router.push(page) : null)}
+                onClick={() => {
+                  closeDrawer ? closeDrawer() : null;
+                  page ? router.push(page) : null;
+                }}
               >
                 <ListItemButton selected={pathname == page} sx={item}>
                   <ListItemIcon>{icon}</ListItemIcon>
