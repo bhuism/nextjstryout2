@@ -104,4 +104,4 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
           build-args: |
             GIT_SHA=${{ github.sha }}
-            RELEASE=${{ github.ref.name }}
+            RELEASE=${{ github.ref }}
