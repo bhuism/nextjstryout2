@@ -3,11 +3,11 @@
 import type { Viewport } from 'next';
 import type { PropsWithChildren } from 'react';
 
-import Providers from '~/app/providers';
+import Providers from '~/lib/provider/Providers';
 import Layout from '~/lib/layout';
 
-import AuthGuard from '~/lib/components/provider/AuthGuard';
-import AuthSessionProvider from '~/lib/components/provider/AuthSessionProvider';
+import AuthGuard from '~/lib/provider/AuthGuard';
+import AuthSessionProvider from '~/lib/provider/AuthSessionProvider';
 
 export const viewport: Viewport = {
   width: 'device-width',

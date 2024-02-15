@@ -5,11 +5,14 @@ import { ThemeProvider } from '@mui/material/styles';
 import type { PropsWithChildren } from 'react';
 
 import theme from 'lib/styles/theme/theme';
+import VersionContextProvider from './Version';
 
 const Providers = ({ children }: PropsWithChildren) => {
   return (
     <AppRouterCacheProvider options={{ enableCssLayer: true }}>
-      <ThemeProvider theme={theme}>{children}</ThemeProvider>
+      <ThemeProvider theme={theme}>
+        <VersionContextProvider>{children}</VersionContextProvider>
+      </ThemeProvider>
     </AppRouterCacheProvider>
   );
 };
