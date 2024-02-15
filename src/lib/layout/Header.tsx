@@ -1,16 +1,13 @@
 'use client';
 
-import HelpIcon from '@mui/icons-material/Help';
-import NotificationsIcon from '@mui/icons-material/Notifications';
+import MenuIcon from '@mui/icons-material/Menu';
 import { ListItemText } from '@mui/material';
 import AppBar from '@mui/material/AppBar';
 import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 import IconButton from '@mui/material/IconButton';
 import Link from '@mui/material/Link';
 import Toolbar from '@mui/material/Toolbar';
-import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 import { useAuth } from 'react-oidc-context';
 
@@ -74,7 +71,6 @@ export default function Header(props: HeaderProps) {
         </Toolbar>
       </AppBar> */}
       <AppBar
-        component="div"
         color="primary"
         position="static"
         elevation={0}
@@ -82,6 +78,16 @@ export default function Header(props: HeaderProps) {
       >
         <Toolbar>
           <Grid container alignItems="center" spacing={1}>
+            <Grid sx={{ display: { sm: 'none', xs: 'block' } }} item>
+              <IconButton
+                color="inherit"
+                aria-label="open drawer"
+                onClick={onDrawerToggle}
+                edge="start"
+              >
+                <MenuIcon />
+              </IconButton>
+            </Grid>
             <Grid item xs>
               <Typography color="inherit" variant="h5" component="h1">
                 Authentication
