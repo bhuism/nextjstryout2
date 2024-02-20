@@ -81,7 +81,12 @@ export default function Navigator({ closeDrawer, ...other }: NavigatorProps) {
               <></>
             )}
             {children.map(({ id: childId, icon, page }) => (
-              <Link href={page} key={childId} prefetch={true}>
+              <Link
+                href={page}
+                key={childId}
+                prefetch={true}
+                style={{ textDecoration: 'none' }}
+              >
                 <ListItem disablePadding>
                   <ListItemButton selected={pathname == page} sx={item}>
                     <ListItemIcon>{icon}</ListItemIcon>
