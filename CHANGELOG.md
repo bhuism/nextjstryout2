@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.24.10](https://github.com/bhuism/nextjstryout2/compare/v1.24.9...v1.24.10) (2024-02-20)
+
+
+### Bug Fixes
+
+* Smaller footer ([27d6cf8](https://github.com/bhuism/nextjstryout2/commit/27d6cf82c9fa4811c85e394963ace625ceae2ec9))
+* TextDecoration none ([3ed2666](https://github.com/bhuism/nextjstryout2/commit/3ed26666ca31f2103ec3f1d9209e0af52e516b9d))
+
 ## [1.24.9](https://github.com/bhuism/nextjstryout2/compare/v1.24.8...v1.24.9) (2024-02-20)
 
 
