@@ -17,6 +17,7 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import { usePathname, useRouter } from 'next/navigation';
 
+import Link from 'next/link';
 import '../../lib/styles/globals.css';
 
 const categories = [
@@ -80,19 +81,14 @@ export default function Navigator({ closeDrawer, ...other }: NavigatorProps) {
               <></>
             )}
             {children.map(({ id: childId, icon, page }) => (
-              <ListItem
-                disablePadding
-                key={childId}
-                onClick={() => {
-                  closeDrawer ? closeDrawer() : null;
-                  page ? router.push(page) : null;
-                }}
-              >
-                <ListItemButton selected={pathname == page} sx={item}>
-                  <ListItemIcon>{icon}</ListItemIcon>
-                  <ListItemText>{childId}</ListItemText>
-                </ListItemButton>
-              </ListItem>
+              <Link href={page} key={childId} prefetch={true}>
+                <ListItem disablePadding>
+                  <ListItemButton selected={pathname == page} sx={item}>
+                    <ListItemIcon>{icon}</ListItemIcon>
+                    <ListItemText>{childId}</ListItemText>
+                  </ListItemButton>
+                </ListItem>
+              </Link>
             ))}
             <Divider sx={{ mt: 2 }} />
           </Box>
