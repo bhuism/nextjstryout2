@@ -16,7 +16,7 @@ const Footer = () => {
         href="https://nextjstryout2.impl.nl/"
         underline="hover"
       >
-        nextjstryout2.impl.nl
+        nextjstryout2
       </Link>{' '}
       {new Date().getFullYear()}{' '}
       <Link
