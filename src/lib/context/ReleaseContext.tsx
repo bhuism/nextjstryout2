@@ -2,14 +2,18 @@
 
 import React from 'react';
 
-export type iReleaseContext = {
-  release: String;
+export type iConstantsContext = {
+  release: string;
+  gitsha: string;
+  gitsha_short: string;
+  redirect_uri: string;
 };
 
-export const ReleaseContext = React.createContext<iReleaseContext>({
-  release: process.env.NEXT_PUBLIC_RELEASE
-    ? process.env.NEXT_PUBLIC_RELEASE
-    : 'unknown',
+export const ConstantsContext = React.createContext<iConstantsContext>({
+  release: 'uninitialized',
+  gitsha: 'uninitialized',
+  gitsha_short: 'uninitialized',
+  redirect_uri: 'uninitialized',
 });
 
-export default ReleaseContext;
+export default ConstantsContext;

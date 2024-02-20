@@ -3,10 +3,10 @@
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 import { useContext } from 'react';
-import ReleaseContext from '../context/ReleaseContext';
+import ConstantsContext from '../context/ReleaseContext';
 
 const Footer = () => {
-  const { release } = useContext(ReleaseContext);
+  const { release, gitsha_short, gitsha } = useContext(ConstantsContext);
 
   return (
     <Typography variant="body2" color="text.secondary" align="center">
@@ -21,15 +21,10 @@ const Footer = () => {
       {new Date().getFullYear()}{' '}
       <Link
         color="inherit"
-        href={
-          'https://github.com/bhuism/nextjstryout2/tree/' +
-          process.env.NEXT_PUBLIC_GIT_SHA
-        }
+        href={'https://github.com/bhuism/nextjstryout2/tree/' + gitsha}
         underline="hover"
       >
-        {process.env.NEXT_PUBLIC_GIT_SHA
-          ? process.env.NEXT_PUBLIC_GIT_SHA.substring(0, 8)
-          : null}
+        {gitsha_short}
       </Link>{' '}
       <Link
         color="inherit"

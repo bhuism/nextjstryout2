@@ -3,11 +3,12 @@
 import type { Viewport } from 'next';
 import type { PropsWithChildren } from 'react';
 
-import Providers from '~/lib/provider/Providers';
 import Layout from '~/lib/layout';
+import Providers from '~/lib/provider/Providers';
 
 import AuthGuard from '~/lib/provider/AuthGuard';
 import AuthSessionProvider from '~/lib/provider/AuthSessionProvider';
+import ConstantsProvider from '~/lib/provider/ConstantsProvider';
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -18,13 +19,15 @@ const RootLayout = ({ children }: PropsWithChildren) => {
   return (
     <html lang="en">
       <body>
-        <AuthSessionProvider>
-          <AuthGuard>
-            <Providers>
-              <Layout>{children}</Layout>
-            </Providers>
-          </AuthGuard>
-        </AuthSessionProvider>
+        <ConstantsProvider>
+          <AuthSessionProvider>
+            <AuthGuard>
+              <Providers>
+                <Layout>{children}</Layout>
+              </Providers>
+            </AuthGuard>
+          </AuthSessionProvider>
+        </ConstantsProvider>
       </body>
     </html>
   );
