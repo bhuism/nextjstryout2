@@ -49,11 +49,7 @@ const itemCategory = {
   px: 3,
 };
 
-export interface NavigatorProps extends DrawerProps {
-  closeDrawer?: () => void;
-}
-
-export default function Navigator({ closeDrawer, ...other }: NavigatorProps) {
+export default function Navigator({ ...other }: DrawerProps) {
   const router = useRouter();
   const pathname = usePathname();
 

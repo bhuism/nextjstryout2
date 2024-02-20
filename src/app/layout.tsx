@@ -21,11 +21,11 @@ const RootLayout = ({ children }: PropsWithChildren) => {
       <body>
         <ConstantsProvider>
           <AuthSessionProvider>
-            <AuthGuard>
-              <Providers>
-                <Layout>{children}</Layout>
-              </Providers>
-            </AuthGuard>
+            <Providers>
+              <Layout>
+                <AuthGuard>{children}</AuthGuard>
+              </Layout>
+            </Providers>
           </AuthSessionProvider>
         </ConstantsProvider>
       </body>
