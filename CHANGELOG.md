@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.24.9](https://github.com/bhuism/nextjstryout2/compare/v1.24.8...v1.24.9) (2024-02-20)
+
+
+### Bug Fixes
+
+* Move constantsprovider, logout ([1485113](https://github.com/bhuism/nextjstryout2/commit/148511336a622b3758534ca2876dcc6dfabb6273))
+
 ## [1.24.8](https://github.com/bhuism/nextjstryout2/compare/v1.24.7...v1.24.8) (2024-02-15)
 
 
