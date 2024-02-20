@@ -28,10 +28,11 @@ const Login = () => {
             alignItems: 'center',
           }}
         >
+          <h1>NextJsTryOut2</h1>
           <Button
-            fullWidth
             variant="contained"
             sx={{ mt: 3, mb: 2 }}
+            size="large"
             onClick={() => auth.signinRedirect()}
           >
             Login
