@@ -6,16 +6,13 @@ import { useContext } from 'react';
 import ConstantsContext from '../context/ReleaseContext';
 
 const Footer = () => {
-  const { release, gitsha_short, gitsha } = useContext(ConstantsContext);
+  const { release, gitsha_short, gitsha, redirect_uri } =
+    useContext(ConstantsContext);
 
   return (
     <Typography variant="body2" color="text.secondary" align="center">
       {'Copyright © '}
-      <Link
-        color="inherit"
-        href="https://nextjstryout2.impl.nl/"
-        underline="hover"
-      >
+      <Link color="inherit" href={redirect_uri} underline="hover">
         nextjstryout2
       </Link>{' '}
       {new Date().getFullYear()}{' '}
