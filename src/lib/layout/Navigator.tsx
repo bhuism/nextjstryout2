@@ -15,7 +15,7 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import { usePathname, useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 
 import Link from 'next/link';
 import '../../lib/styles/globals.css';
@@ -54,22 +54,22 @@ export interface NavigatorProps extends DrawerProps {
 }
 
 export default function Navigator({ closeDrawer, ...other }: NavigatorProps) {
-  const router = useRouter();
   const pathname = usePathname();
 
   return (
     <Drawer variant="permanent" {...other}>
       <List disablePadding>
-        <ListItem
-          sx={{ ...item, ...itemCategory, fontSize: 22, color: '#fff' }}
-          onClick={() => router.push('/')}
-          className={'clickable'}
-        >
-          <ListItemIcon>
-            <HomeIcon />
-          </ListItemIcon>
-          <ListItemText>NextJsTryOut2</ListItemText>
-        </ListItem>
+        <Link href={'/'} replace>
+          <ListItem
+            sx={{ ...item, ...itemCategory, fontSize: 22, color: '#fff' }}
+            className={'clickable'}
+          >
+            <ListItemIcon>
+              <HomeIcon />
+            </ListItemIcon>
+            <ListItemText>NextJsTryOut2</ListItemText>
+          </ListItem>
+        </Link>
 
         {categories.map(({ id, children }) => (
           <Box key={id} sx={{ bgcolor: '#101F33' }}>
@@ -86,7 +86,7 @@ export default function Navigator({ closeDrawer, ...other }: NavigatorProps) {
                 key={childId}
                 prefetch={true}
                 style={{ textDecoration: 'none' }}
-                onClick={() => closeDrawer ? closeDrawer() : null}
+                onClick={() => (closeDrawer ? closeDrawer() : null)}
               >
                 <ListItem disablePadding>
                   <ListItemButton selected={pathname == page} sx={item}>
