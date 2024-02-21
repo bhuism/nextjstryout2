@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.24.12](https://github.com/bhuism/nextjstryout2/compare/v1.24.11...v1.24.12) (2024-02-21)
+
+
+### Bug Fixes
+
+* Close drawer ([4f1dea6](https://github.com/bhuism/nextjstryout2/commit/4f1dea6b846cb1fd1655808d109331cc05c56be4))
+
 ## [1.24.11](https://github.com/bhuism/nextjstryout2/compare/v1.24.10...v1.24.11) (2024-02-20)
 
 
