@@ -49,7 +49,11 @@ const itemCategory = {
   px: 3,
 };
 
-export default function Navigator({ ...other }: DrawerProps) {
+export interface NavigatorProps extends DrawerProps {
+  closeDrawer?: () => void;
+}
+
+export default function Navigator({ closeDrawer, ...other }: NavigatorProps) {
   const router = useRouter();
   const pathname = usePathname();
 
@@ -82,6 +86,7 @@ export default function Navigator({ ...other }: DrawerProps) {
                 key={childId}
                 prefetch={true}
                 style={{ textDecoration: 'none' }}
+                onClick={() => closeDrawer ? closeDrawer() : null}
               >
                 <ListItem disablePadding>
                   <ListItemButton selected={pathname == page} sx={item}>
