@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.24.13](https://github.com/bhuism/nextjstryout2/compare/v1.24.12...v1.24.13) (2024-02-22)
+
+
+### Bug Fixes
+
+* **deps:** Update dependency @mui/material-nextjs to v5.15.11 ([20607c6](https://github.com/bhuism/nextjstryout2/commit/20607c63d18c83c98ab317429b0f71f4968133d7))
+* Remove router from homebutton ([a38d030](https://github.com/bhuism/nextjstryout2/commit/a38d030af88e3f2dc928d6239e2b4e69b1c30797))
+
 ## [1.24.12](https://github.com/bhuism/nextjstryout2/compare/v1.24.11...v1.24.12) (2024-02-21)
 
 
