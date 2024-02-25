@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:base", "group:all"],
+  "extends": ["config:recommended", "group:all"],
   "platform": "github",
   "lockFileMaintenance": {
     "enabled": true,
@@ -8,8 +8,7 @@
   },
   "packageRules": [
     {
-      "description": "Automerge non-major updates",
-      "matchUpdateTypes": ["major", "minor", "patch"],
+      "matchUpdateTypes": ["minor", "patch"],
       "automerge": true
     }
   ]
