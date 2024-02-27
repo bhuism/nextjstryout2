@@ -6,7 +6,6 @@ import HomeIcon from '@mui/icons-material/Home';
 import PeopleIcon from '@mui/icons-material/People';
 import PermMediaOutlinedIcon from '@mui/icons-material/PhotoSizeSelectActual';
 import PublicIcon from '@mui/icons-material/Public';
-import SettingsEthernetIcon from '@mui/icons-material/SettingsEthernet';
 import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
 import Drawer, { DrawerProps } from '@mui/material/Drawer';
@@ -28,7 +27,6 @@ const categories = [
       { id: 'Database', icon: <DnsRoundedIcon />, page: '/database' },
       { id: 'Storage', icon: <PermMediaOutlinedIcon />, page: '/storage' },
       { id: 'Hosting', icon: <PublicIcon />, page: '/hosting' },
-      { id: 'Functions', icon: <SettingsEthernetIcon />, page: '/functions' },
       { id: 'Test Page', icon: <RocketLaunch />, page: '/testpage' },
     ],
   },
