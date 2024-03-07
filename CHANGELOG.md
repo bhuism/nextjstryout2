@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.24.17](https://github.com/bhuism/nextjstryout2/compare/v1.24.16...v1.24.17) (2024-03-07)
+
+
+### Bug Fixes
+
+* Add favicond ([5880534](https://github.com/bhuism/nextjstryout2/commit/58805347963565b6afbd42bc95482288c3d04228))
+
 ## [1.24.16](https://github.com/bhuism/nextjstryout2/compare/v1.24.15...v1.24.16) (2024-03-07)
 
 
