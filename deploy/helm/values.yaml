@@ -9,7 +9,7 @@ controllers:
       main:
         image:
           repository: europe-west4-docker.pkg.dev/impl-383520/docker/nextjstryout2
-          tag: 1.24.15
+          tag: 1.24.16
           pullPolicy: IfNotPresent
         securityContext:
           allowPrivilegeEscalation: false
@@ -52,7 +52,7 @@ ingress:
     className: nginx
     annotations:
       external-dns.alpha.kubernetes.io/target: jasmine.odee.net
-      external-dns.alpha.kubernetes.io/cloudflare-proxied: "false"
+      external-dns.alpha.kubernetes.io/cloudflare-proxied: 'false'
       cert-manager.io/cluster-issuer: letsencrypt-production
     hosts:
       - host: nextjstryout2.impl.nl
