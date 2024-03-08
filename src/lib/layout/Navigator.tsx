@@ -21,7 +21,7 @@ import '../../lib/styles/globals.css';
 
 const categories = [
   {
-    id: null,
+    id: 'main',
     children: [
       { id: 'Authentication', icon: <PeopleIcon />, page: '/' },
       { id: 'Database', icon: <DnsRoundedIcon />, page: '/database' },
@@ -50,6 +50,14 @@ const itemCategory = {
 export interface NavigatorProps extends DrawerProps {
   closeDrawer?: () => void;
 }
+
+export const CurrentPageString: React.FC = () => {
+  const pathname = usePathname();
+
+  const title = categories[0].children.find((i) => i.page == pathname)?.id;
+
+  return <div>{title}</div>;
+};
 
 export default function Navigator({ closeDrawer, ...other }: NavigatorProps) {
   const pathname = usePathname();

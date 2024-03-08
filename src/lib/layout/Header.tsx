@@ -10,7 +10,7 @@ import Link from '@mui/material/Link';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import { useAuth } from 'react-oidc-context';
-
+import { CurrentPageString } from './Navigator';
 const lightColor = 'rgba(255, 255, 255, 0.7)';
 
 interface HeaderProps {
@@ -44,7 +44,7 @@ export default function Header(props: HeaderProps) {
             </Grid>
             <Grid item xs>
               <Typography color="inherit" variant="h5" component="h1">
-                Authentication
+                <CurrentPageString />
               </Typography>
             </Grid>
             <Grid item>
