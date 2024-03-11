@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.24.20](https://github.com/bhuism/nextjstryout2/compare/v1.24.19...v1.24.20) (2024-03-11)
+
+
+### Bug Fixes
+
+* Add controller ([b3f1801](https://github.com/bhuism/nextjstryout2/commit/b3f1801bb63a98e8dbd865c68153e379e9b94e83))
+
 ## [1.24.19](https://github.com/bhuism/nextjstryout2/compare/v1.24.18...v1.24.19) (2024-03-11)
 
 
