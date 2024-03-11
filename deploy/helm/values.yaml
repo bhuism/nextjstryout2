@@ -43,6 +43,7 @@ controllers:
             memory: 128Mi
 service:
   main:
+    controller: main
     ports:
       http:
         port: 3000
