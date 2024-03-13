@@ -8,6 +8,7 @@ All notable changes to this project will be documented in this file. See [standa
 ### Bug Fixes
 
 * Better display manifest ([6702462](https://github.com/bhuism/nextjstryout2/commit/6702462d1817d478db425487d4ab63d0e3fe8531))
+* **deps:** Update all dependencies to v5.15.13 ([0731a48](https://github.com/bhuism/nextjstryout2/commit/0731a4870695eb0dd2613e70e02e9f8439ae7b8f))
 
 ## [1.24.23](https://github.com/bhuism/nextjstryout2/compare/v1.24.22...v1.24.23) (2024-03-13)
 
