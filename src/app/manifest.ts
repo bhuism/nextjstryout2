@@ -10,7 +10,7 @@ const manifest = (): MetadataRoute.Manifest => ({
   theme_color: '#4010BB',
   dir: 'ltr',
   orientation: 'portrait',
-  display: 'browser',
+  display: 'standalone',
 });
 
 export default manifest;
