@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.24.25](https://github.com/bhuism/nextjstryout2/compare/v1.24.24...v1.24.25) (2024-03-15)
+
+
+### Bug Fixes
+
+* Add fallbacks ([361fd8d](https://github.com/bhuism/nextjstryout2/commit/361fd8d3fca0ba8b58a507e9cfaa4eedf8d2dd6d))
+* Headers in next config ([9442151](https://github.com/bhuism/nextjstryout2/commit/94421513035d8b562afa20afb98a4fe07ba6b4f0))
+* Move to serwist ([d6369fc](https://github.com/bhuism/nextjstryout2/commit/d6369fc5d22e7017478a6a056777c457f202831d))
+* Page.tsx export metada ([94fb2ee](https://github.com/bhuism/nextjstryout2/commit/94fb2eee26d8c207587153f05ccd40a32de5d8bf))
+* Prettier ([c4d8282](https://github.com/bhuism/nextjstryout2/commit/c4d8282c22333ae7e17f97bd46754ad3e3a28056))
+* Remove src map, fix headers, build ([db26b48](https://github.com/bhuism/nextjstryout2/commit/db26b4837e4d0cfc99f1c1a9f5bbe8524a4c77e7))
+* Warning ([47f351f](https://github.com/bhuism/nextjstryout2/commit/47f351f01e2bd87b54d898fe1c6c6e4b99a116d1))
+
 ## [1.24.24](https://github.com/bhuism/nextjstryout2/compare/v1.24.23...v1.24.24) (2024-03-13)
 
 ### Bug Fixes
