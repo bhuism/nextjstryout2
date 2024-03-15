@@ -1,11 +1,12 @@
-// @ts-check
+import withSerwistInit from '@serwist/next';
 
-const withPWA = require('next-pwa')({
-  dest: 'public',
+const withSerwist = withSerwistInit({
+  swSrc: 'src/app/sw.ts', // where the service worker src is
+  swDest: 'public/sw.js', // where the service worker code will end up
   disable: process.env.NODE_ENV === 'development',
 });
 
-module.exports = withPWA({
+export default withSerwist({
   swcMinify: true,
   reactStrictMode: true,
   eslint: {
