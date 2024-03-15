@@ -1,7 +1,12 @@
 {
-  "src/**/*.{js,jsx,ts,tsx}": [
+  "app/**/*.{js,jsx,ts,tsx}": [
     "eslint --fix --max-warnings=0",
     "prettier --write"
   ],
-  "src/**/*.{json,css,scss,md}": ["prettier --write"]
+  "lib/**/*.{js,jsx,ts,tsx}": [
+    "eslint --fix --max-warnings=0",
+    "prettier --write"
+  ],
+  "app/**/*.{json,css,scss,md}": ["prettier --write"],
+  "lib/**/*.{json,css,scss,md}": ["prettier --write"]
 }

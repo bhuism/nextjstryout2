@@ -31,9 +31,11 @@ yarn-error.log*
 .env.test.local
 .env.production.local
 
-**/public/workbox-*.js
-**/public/sw.js
-**/public/service-worker.js
+**/public/serwist**
+**/public/sw**
+**/public/worker**
+**/public/fallback**
+**/public/precache**
 
 # sitemap
 robots.txt
