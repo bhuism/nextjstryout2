@@ -16,6 +16,7 @@ const nextConfig = {
     dirs: ['app', 'lib'],
   },
   output: 'standalone',
+  // @ts-ignore
   headers: async () => [
     {
       source: '/',
