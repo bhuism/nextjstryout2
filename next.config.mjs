@@ -1,3 +1,5 @@
+// @ts-check
+
 import withSerwistInit from '@serwist/next';
 
 const withSerwist = withSerwistInit({
@@ -6,28 +8,32 @@ const withSerwist = withSerwistInit({
   disable: process.env.NODE_ENV === 'development',
 });
 
-export default withSerwist({
+/** @type {import("next").NextConfig} */
+const nextConfig = {
   swcMinify: true,
   reactStrictMode: true,
   eslint: {
     dirs: ['src'],
   },
   output: 'standalone',
-  async headers() {
-    return [
-      {
-        source: '/',
-        headers: [
-          {
-            key: 'mysha',
-            value: process.env.NEXT_PUBLIC_GIT_SHA,
-          },
-          {
-            key: 'myversion',
-            value: process.env.NEXT_PUBLIC_RELEASE,
-          },
-        ],
-      },
-    ];
-  },
-});
+  headers: () =>
+    new Promise(() => {
+      return [
+        {
+          source: '/',
+          headers: [
+            {
+              key: 'mysha',
+              value: process.env.NEXT_PUBLIC_GIT_SHA,
+            },
+            {
+              key: 'myversion',
+              value: process.env.NEXT_PUBLIC_RELEASE,
+            },
+          ],
+        },
+      ];
+    }),
+};
+
+export default withSerwist(nextConfig);
