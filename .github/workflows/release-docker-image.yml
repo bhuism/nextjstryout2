@@ -15,7 +15,6 @@ permissions:
   id-token: write
 
 jobs:
-
   build-and-push-docker-image:
     runs-on: ubuntu-latest
 

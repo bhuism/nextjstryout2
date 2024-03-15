@@ -65,11 +65,12 @@ export default function Navigator({ closeDrawer, ...other }: NavigatorProps) {
   return (
     <Drawer variant="permanent" {...other}>
       <List disablePadding>
-        <Link href={'/'}
+        <Link
+          href={'/'}
           replace
           style={{ textDecoration: 'none' }}
           onClick={() => (closeDrawer ? closeDrawer() : null)}
-          >
+        >
           <ListItem
             sx={{ ...item, ...itemCategory, fontSize: 22, color: '#fff' }}
             className={'clickable'}
