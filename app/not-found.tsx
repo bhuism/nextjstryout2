@@ -1,5 +1,3 @@
-'use client';
-
 import type { Metadata } from 'next';
 
 import Page404 from '~/lib/pages/404';

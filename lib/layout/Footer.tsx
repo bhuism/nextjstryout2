@@ -1,18 +1,24 @@
-'use client';
-
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 import { useContext } from 'react';
-import ConstantsContext from '../context/ReleaseContext';
 
 const Footer = () => {
-  const { release, gitsha_short, gitsha, redirect_uri } =
-    useContext(ConstantsContext);
+  const gitsha = process.env.NEXT_PUBLIC_GIT_SHA;
+  const gitsha_short = process.env.NEXT_PUBLIC_GIT_SHA
+    ? process.env.NEXT_PUBLIC_GIT_SHA?.substring(0, 8)
+    : 'unknown';
+  const release = process.env.NEXT_PUBLIC_RELEASE
+    ? process.env.NEXT_PUBLIC_RELEASE.substring(10)
+    : 'unknown';
 
   return (
     <Typography variant="body2" color="text.secondary" align="center">
       {'Copyright © '}
-      <Link color="inherit" href={redirect_uri} underline="hover">
+      <Link
+        color="inherit"
+        href={process.env.NEXT_PUBLIC_REDIRECT_URI}
+        underline="hover"
+      >
         nextjstryout2
       </Link>{' '}
       {new Date().getFullYear()}{' '}

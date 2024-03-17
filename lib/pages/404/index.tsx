@@ -1,5 +1,3 @@
-'use client';
-
 import { Button } from '@mui/material';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';

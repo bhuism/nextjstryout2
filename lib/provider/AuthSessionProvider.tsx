@@ -1,14 +1,13 @@
 'use client';
 
 import { User } from 'oidc-client-ts';
-import { PropsWithChildren, useContext } from 'react';
+import { PropsWithChildren } from 'react';
 import { AuthProvider, AuthProviderProps } from 'react-oidc-context';
-import ConstantsContext from '../context/ReleaseContext';
 
 const AuthSessionProvider = ({ children }: PropsWithChildren) => {
-  const { redirect_uri } = useContext(ConstantsContext);
-
   const authority = 'dev-g4n3hjan0v2jg3le.eu.auth0.com';
+
+  const redirect_uri = process.env.NEXT_PUBLIC_REDIRECT_URI;
 
   const oidcConfig: AuthProviderProps = {
     authority: authority,
