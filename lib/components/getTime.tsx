@@ -1,14 +1,17 @@
-//never use in production
+import { unstable_noStore as noStore } from 'next/cache';
+
 function timeout(delay: number) {
   return new Promise((res) => setTimeout(res, delay));
 }
 
 async function getDataFromServer(slug: string) {
+  noStore();
+
   var n = 2 + Math.floor(Math.random() * 5);
   await timeout(n * 1000);
 
-  const res = await fetch('https://time.impl.nl/?' + slug, {
-    cache: 'no-cache',
+  const res = await fetch('http://ok-time-service.okapp:8080?' + slug, {
+    cache: 'no-store',
   });
 
   if (!res.ok) {
