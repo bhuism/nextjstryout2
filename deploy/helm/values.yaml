@@ -9,7 +9,7 @@ controllers:
       main:
         image:
           repository: europe-west4-docker.pkg.dev/impl-383520/docker/nextjstryout2
-          tag: 1.24.26
+          tag: 1.24.27
           pullPolicy: IfNotPresent
         securityContext:
           allowPrivilegeEscalation: false
