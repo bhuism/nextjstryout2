@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.24.28](https://github.com/bhuism/nextjstryout2/compare/v1.24.27...v1.24.28) (2024-03-18)
+
+
+### Bug Fixes
+
+* Remove slowdown ([5681a8b](https://github.com/bhuism/nextjstryout2/commit/5681a8bc75d8b288aeef54573ae1bf917e85315f))
+
 ## [1.24.27](https://github.com/bhuism/nextjstryout2/compare/v1.24.26...v1.24.27) (2024-03-18)
 
 

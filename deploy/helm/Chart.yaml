@@ -1,6 +1,6 @@
 apiVersion: v2
 name: nextjstryout2
-version: 1.24.27
+version: 1.24.28
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
