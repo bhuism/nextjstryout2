@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.24.26](https://github.com/bhuism/nextjstryout2/compare/v1.24.25...v1.24.26) (2024-03-18)
+
+
+### Bug Fixes
+
+* Try streaming with suspense ([fa37ea1](https://github.com/bhuism/nextjstryout2/commit/fa37ea165d30fb00c1714ac06b733d363c3abdbb))
+
 ## [1.24.25](https://github.com/bhuism/nextjstryout2/compare/v1.24.24...v1.24.25) (2024-03-15)
 
 
