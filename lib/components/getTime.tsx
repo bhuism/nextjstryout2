@@ -3,7 +3,7 @@ import { unstable_noStore as noStore } from 'next/cache';
 async function getDataFromServer(slug: string) {
   noStore();
 
-  const res = await fetch('http://ok-time-service.okapp:8080?' + slug, {
+  const res = await fetch(process.env.TIME_API_URI + '?' + slug, {
     cache: 'no-store',
   });
 

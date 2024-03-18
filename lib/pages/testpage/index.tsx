@@ -8,15 +8,11 @@ const TestPage = () => {
     <section>
       <Paper sx={{ maxWidth: 936, margin: 'auto', overflow: 'hidden' }}>
         <Typography sx={{ my: 5, mx: 2 }} color="text.secondary" align="center">
-          <Suspense fallback={<p>Loading...</p>}>
-            <RepoComponent slug="a" />
-          </Suspense>
-          <Suspense fallback={<p>Loading...</p>}>
-            <RepoComponent slug="b" />
-          </Suspense>
-          <Suspense fallback={<p>Loading...</p>}>
-            <RepoComponent slug="c" />
-          </Suspense>
+          {[...Array(25)].map((e, i) => (
+            <Suspense key={i} fallback={<p>Loading {i}...</p>}>
+              <RepoComponent slug={'a' + i} />
+            </Suspense>
+          ))}
         </Typography>
       </Paper>
     </section>
