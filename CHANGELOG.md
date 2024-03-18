@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.24.29](https://github.com/bhuism/nextjstryout2/compare/v1.24.28...v1.24.29) (2024-03-18)
+
+
+### Bug Fixes
+
+* Call more, dynamic time api endpoint ([14830c6](https://github.com/bhuism/nextjstryout2/commit/14830c6d27c7cc3b97a3e436acf84d0a0563cea5))
+
 ## [1.24.28](https://github.com/bhuism/nextjstryout2/compare/v1.24.27...v1.24.28) (2024-03-18)
 
 
