@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.24.33](https://github.com/bhuism/nextjstryout2/compare/v1.24.32...v1.24.33) (2024-03-19)
+
+
+### Bug Fixes
+
+* Add force-dynamic ([46e93ce](https://github.com/bhuism/nextjstryout2/commit/46e93ce594b9985fa5d889eff1372a4fd583d4d5))
+* Trigger ([f5eb532](https://github.com/bhuism/nextjstryout2/commit/f5eb53292c9acc9c496b4c7a6297c58582cbe55e))
+
 ## [1.24.32](https://github.com/bhuism/nextjstryout2/compare/v1.24.31...v1.24.32) (2024-03-19)
 
 
