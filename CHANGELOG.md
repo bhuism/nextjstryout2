@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.24.32](https://github.com/bhuism/nextjstryout2/compare/v1.24.31...v1.24.32) (2024-03-19)
+
+
+### Bug Fixes
+
+* User group ([a300a5e](https://github.com/bhuism/nextjstryout2/commit/a300a5e41595b76fb653a23bad29d7d39b6fd182))
+
 ## [1.24.31](https://github.com/bhuism/nextjstryout2/compare/v1.24.30...v1.24.31) (2024-03-19)
 
 
