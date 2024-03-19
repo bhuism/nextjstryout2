@@ -30,12 +30,13 @@ COPY --from=builder /app/public ./public
 
 # Set the correct permission for prerender cache
 RUN mkdir .next
-RUN chown nextjs:nodejs .next
 
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
-USER 1001
+RUN chown -R nextjs:nodejs /app
+
+USER nextjs:nodejs
 
 EXPOSE 3000
 
