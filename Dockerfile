@@ -36,7 +36,7 @@ COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
 RUN chown -R nextjs:nodejs /app
 
-USER nextjs:nodejs
+USER 1001:1001
 
 EXPOSE 3000
 
