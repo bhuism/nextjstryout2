@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.24.30](https://github.com/bhuism/nextjstryout2/compare/v1.24.29...v1.24.30) (2024-03-19)
+
+
+### Bug Fixes
+
+* Add icons ([6d2c56e](https://github.com/bhuism/nextjstryout2/commit/6d2c56eb5c57746fb424e6b0d2ab02aa384d9b91))
+* Add icons ([fca0fcc](https://github.com/bhuism/nextjstryout2/commit/fca0fcc15ea08e01cb135188b67a2527905421dc))
+* Better fetch ([d24cc16](https://github.com/bhuism/nextjstryout2/commit/d24cc16b665f14ae4b53f5f664d0f8b3b6cb26df))
+* Disable pwa in dev ([1d9f100](https://github.com/bhuism/nextjstryout2/commit/1d9f10014698e64bb75d0a4ad26cfd9fe8ca726f))
+
 ## [1.24.29](https://github.com/bhuism/nextjstryout2/compare/v1.24.28...v1.24.29) (2024-03-18)
 
 
