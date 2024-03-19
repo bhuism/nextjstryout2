@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.24.31](https://github.com/bhuism/nextjstryout2/compare/v1.24.30...v1.24.31) (2024-03-19)
+
+
+### Bug Fixes
+
+* Add loading ([9f9face](https://github.com/bhuism/nextjstryout2/commit/9f9face62118375b45da892f3c2b72406b533e86))
+
 ## [1.24.30](https://github.com/bhuism/nextjstryout2/compare/v1.24.29...v1.24.30) (2024-03-19)
 
 
