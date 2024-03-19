@@ -7,7 +7,7 @@
     "dev": "NEXT_PUBLIC_GIT_SHA=$(git rev-parse HEAD) NEXT_PUBLIC_RELEASE=refs/tags/v1.24.7 next dev",
     "build": "next build",
     "postbuild": "next-sitemap --config next-sitemap.config.js",
-    "start": "NEXT_PUBLIC_GIT_SHA=$(git rev-parse HEAD) NEXT_PUBLIC_RELEASE=release next start",
+    "start": "NEXT_PUBLIC_GIT_SHA=$(git rev-parse HEAD) NEXT_PUBLIC_RELEASE=release node .next/standalone/server.js",
     "lint": "next lint",
     "lint:fix": "eslint app lib --fix && npm format",
     "cypress:open": "cypress open",
