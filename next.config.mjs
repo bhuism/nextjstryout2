@@ -6,6 +6,7 @@ const withSerwist = withSerwistInit({
   cacheOnFrontEndNav: true,
   swSrc: 'app/sw.ts', // where the service worker src is
   swDest: 'public/sw.js', // where the service worker code will end up
+  disable: process.env.NODE_ENV === 'development',
 });
 
 /** @type {import("next").NextConfig} */
