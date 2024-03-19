@@ -3,6 +3,9 @@ import Typography from '@mui/material/Typography';
 import { Suspense } from 'react';
 import RepoComponent from '~/lib/components/getTime';
 
+
+export const dynamic = "force-dynamic";
+
 const TestPage = () => {
   return (
     <section>
