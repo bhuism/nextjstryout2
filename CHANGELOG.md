@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.24.35](https://github.com/bhuism/nextjstryout2/compare/v1.24.34...v1.24.35) (2024-03-20)
+
+
+### Bug Fixes
+
+* Dont use map ([da3959b](https://github.com/bhuism/nextjstryout2/commit/da3959b09a4b35f5c83d9f2fc19b712649244715))
+
 ## [1.24.34](https://github.com/bhuism/nextjstryout2/compare/v1.24.33...v1.24.34) (2024-03-20)
 
 
