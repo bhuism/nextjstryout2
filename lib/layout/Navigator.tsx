@@ -19,7 +19,7 @@ import '../../lib/styles/globals.css';
 
 const categories = [
   {
-    id: 'main',
+    id: '',
     children: [
       { id: 'Authentication', icon: <PeopleIcon />, page: '/' },
       { id: 'Database', icon: <DnsRoundedIcon />, page: '/database' },
