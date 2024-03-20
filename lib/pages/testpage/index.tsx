@@ -15,13 +15,66 @@ const TestPage = () => {
     <section>
       <Paper sx={{ maxWidth: 936, margin: 'auto', overflow: 'hidden' }}>
         <Grid container spacing={1}>
-          {[...Array(100)].map((e, i) => (
-            <Grid item key={i}>
-              <Suspense key={i} fallback={<CircularProgress />}>
-                <RepoComponent slug={'a' + i} />
-              </Suspense>
-            </Grid>
-          ))}
+          <Grid item>
+            <Suspense fallback={<CircularProgress />}>
+              <RepoComponent slug={'a0'} />
+            </Suspense>
+          </Grid>
+          <Grid item>
+            <Suspense fallback={<CircularProgress />}>
+              <RepoComponent slug={'a0'} />
+            </Suspense>
+          </Grid>
+          <Grid item>
+            <Suspense fallback={<CircularProgress />}>
+              <RepoComponent slug={'a0'} />
+            </Suspense>
+          </Grid>{' '}
+          <Grid item>
+            <Suspense fallback={<CircularProgress />}>
+              <RepoComponent slug={'a0'} />
+            </Suspense>
+          </Grid>
+          <Grid item>
+            <Suspense fallback={<CircularProgress />}>
+              <RepoComponent slug={'a0'} />
+            </Suspense>
+          </Grid>
+          <Grid item>
+            <Suspense fallback={<CircularProgress />}>
+              <RepoComponent slug={'a0'} />
+            </Suspense>
+          </Grid>{' '}
+          <Grid item>
+            <Suspense fallback={<CircularProgress />}>
+              <RepoComponent slug={'a0'} />
+            </Suspense>
+          </Grid>
+          <Grid item>
+            <Suspense fallback={<CircularProgress />}>
+              <RepoComponent slug={'a0'} />
+            </Suspense>
+          </Grid>
+          <Grid item>
+            <Suspense fallback={<CircularProgress />}>
+              <RepoComponent slug={'a0'} />
+            </Suspense>
+          </Grid>{' '}
+          <Grid item>
+            <Suspense fallback={<CircularProgress />}>
+              <RepoComponent slug={'a0'} />
+            </Suspense>
+          </Grid>
+          <Grid item>
+            <Suspense fallback={<CircularProgress />}>
+              <RepoComponent slug={'a0'} />
+            </Suspense>
+          </Grid>
+          <Grid item>
+            <Suspense fallback={<CircularProgress />}>
+              <RepoComponent slug={'a0'} />
+            </Suspense>
+          </Grid>
         </Grid>
       </Paper>
     </section>
