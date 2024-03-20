@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.24.34](https://github.com/bhuism/nextjstryout2/compare/v1.24.33...v1.24.34) (2024-03-20)
+
+
+### Bug Fixes
+
+* Move to client component with server action ([511df40](https://github.com/bhuism/nextjstryout2/commit/511df40a4f4b482d6acefdfc6cd86ba0b392ef3d))
+
 ## [1.24.33](https://github.com/bhuism/nextjstryout2/compare/v1.24.32...v1.24.33) (2024-03-19)
 
 
