@@ -22,57 +22,57 @@ const TestPage = () => {
           </Grid>
           <Grid item>
             <Suspense fallback={<CircularProgress />}>
-              <RepoComponent slug={'a0'} />
+              <RepoComponent slug={'a1'} />
             </Suspense>
           </Grid>
           <Grid item>
             <Suspense fallback={<CircularProgress />}>
-              <RepoComponent slug={'a0'} />
+              <RepoComponent slug={'a2'} />
             </Suspense>
           </Grid>{' '}
           <Grid item>
             <Suspense fallback={<CircularProgress />}>
-              <RepoComponent slug={'a0'} />
+              <RepoComponent slug={'a3'} />
             </Suspense>
           </Grid>
           <Grid item>
             <Suspense fallback={<CircularProgress />}>
-              <RepoComponent slug={'a0'} />
+              <RepoComponent slug={'a4'} />
             </Suspense>
           </Grid>
           <Grid item>
             <Suspense fallback={<CircularProgress />}>
-              <RepoComponent slug={'a0'} />
+              <RepoComponent slug={'a5'} />
             </Suspense>
           </Grid>{' '}
           <Grid item>
             <Suspense fallback={<CircularProgress />}>
-              <RepoComponent slug={'a0'} />
+              <RepoComponent slug={'a6'} />
             </Suspense>
           </Grid>
           <Grid item>
             <Suspense fallback={<CircularProgress />}>
-              <RepoComponent slug={'a0'} />
+              <RepoComponent slug={'a7'} />
             </Suspense>
           </Grid>
           <Grid item>
             <Suspense fallback={<CircularProgress />}>
-              <RepoComponent slug={'a0'} />
+              <RepoComponent slug={'a8'} />
             </Suspense>
           </Grid>{' '}
           <Grid item>
             <Suspense fallback={<CircularProgress />}>
-              <RepoComponent slug={'a0'} />
+              <RepoComponent slug={'a9'} />
             </Suspense>
           </Grid>
           <Grid item>
             <Suspense fallback={<CircularProgress />}>
-              <RepoComponent slug={'a0'} />
+              <RepoComponent slug={'a10'} />
             </Suspense>
           </Grid>
           <Grid item>
             <Suspense fallback={<CircularProgress />}>
-              <RepoComponent slug={'a0'} />
+              <RepoComponent slug={'a11'} />
             </Suspense>
           </Grid>
         </Grid>
