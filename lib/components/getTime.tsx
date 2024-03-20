@@ -2,15 +2,15 @@
 
 import { unstable_noStore as noStore } from 'next/cache';
 
-// function timeout(delay: number) {
-//   return new Promise((res) => setTimeout(res, delay));
-// }
+function timeout(delay: number) {
+  return new Promise((res) => setTimeout(res, delay));
+}
 
 async function getDataFromServer(slug: string) {
   noStore();
 
-  // var n = 1 + Math.floor(Math.random() * 2);
-  // await timeout(n * 1000);
+  var n = 2 + Math.floor(Math.random() * 2);
+  await timeout(n * 1000);
 
   return await fetch(process.env.TIME_API_URI + '?' + slug, {
     cache: 'no-store',
@@ -21,4 +21,8 @@ async function getDataFromServer(slug: string) {
     .catch((e) => JSON.stringify(e));
 }
 
-export default getDataFromServer;
+async function RepoComponent({ slug }: { slug: string }) {
+  return <span>{await getDataFromServer(slug)}</span>;
+}
+
+export default RepoComponent;
