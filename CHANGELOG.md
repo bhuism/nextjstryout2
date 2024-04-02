@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.24.39](https://github.com/bhuism/nextjstryout2/compare/v1.24.38...v1.24.39) (2024-04-02)
+
+
+### Bug Fixes
+
+* Add terms ans privacy ([24b840d](https://github.com/bhuism/nextjstryout2/commit/24b840da62a8744b3ad897d1effbb738abf04dea))
+* **deps:** Update dependency @emotion/styled to v11.11.5 ([7f22cba](https://github.com/bhuism/nextjstryout2/commit/7f22cbaa5bfc8140c109d0b0c3b254dfc97fad09))
+
 ## [1.24.38](https://github.com/bhuism/nextjstryout2/compare/v1.24.37...v1.24.38) (2024-03-26)
 
 
