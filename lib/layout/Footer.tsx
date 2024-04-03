@@ -1,6 +1,5 @@
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
-import { useContext } from 'react';
 
 const Footer = () => {
   const gitsha = process.env.NEXT_PUBLIC_GIT_SHA;
@@ -20,8 +19,10 @@ const Footer = () => {
         underline="hover"
       >
         nextjstryout2
-      </Link>{' '}
-      {new Date().getFullYear()}{' '}
+      </Link>
+      {'-'}
+      {new Date().getFullYear()}
+      {' - '}
       <Link
         color="inherit"
         href={'https://github.com/bhuism/nextjstryout2/tree/' + gitsha}
@@ -35,6 +36,12 @@ const Footer = () => {
         underline="hover"
       >
         {release}
+      </Link>{' - '}
+      <Link color="inherit" href={'/privacy.html'} underline="hover">
+        privacy
+      </Link>{' - '}
+      <Link color="inherit" href={'/terms.html'} underline="hover">
+        terms of use
       </Link>
     </Typography>
   );
