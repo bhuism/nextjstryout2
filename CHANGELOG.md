@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.24.44](https://github.com/bhuism/nextjstryout2/compare/v1.24.43...v1.24.44) (2024-04-15)
+
+
+### Bug Fixes
+
+* **deps:** Update dependency next to v14.2.1 ([9de8c43](https://github.com/bhuism/nextjstryout2/commit/9de8c43de6847ea0baad0cdab2ad1af0c21da85f))
+* **deps:** Update dependency react-icons to v5.1.0 ([9671832](https://github.com/bhuism/nextjstryout2/commit/9671832c6f48b53d4377251d8fbdfff815dbf33d))
+
 ## [1.24.43](https://github.com/bhuism/nextjstryout2/compare/v1.24.42...v1.24.43) (2024-04-08)
 
 
