@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.24.45](https://github.com/bhuism/nextjstryout2/compare/v1.24.44...v1.24.45) (2024-04-15)
+
+
+### Bug Fixes
+
+* Rollback repocomponent ([a717c00](https://github.com/bhuism/nextjstryout2/commit/a717c001677494fdc96f324fc27543310290f746))
+* Timecomponent ([f101827](https://github.com/bhuism/nextjstryout2/commit/f10182799ff6ec0547cff747c89148f5197a23a9))
+
 ## [1.24.44](https://github.com/bhuism/nextjstryout2/compare/v1.24.43...v1.24.44) (2024-04-15)
 
 
