@@ -1,4 +1,4 @@
-'use server';
+'use client';
 
 import { unstable_noStore as noStore } from 'next/cache';
 
@@ -6,13 +6,15 @@ function timeout(delay: number) {
   return new Promise((res) => setTimeout(res, delay));
 }
 
-async function getDataFromServer(slug: string) {
+function getDataFromServer(slug: string) {
+  console.log('time api: ' + process.env.NEXT_PUBLIC_TIME_API_URI);
+
   noStore();
 
   var n = 2 + Math.floor(Math.random() * 2);
-  await timeout(n * 1000);
+  //  await timeout(n * 1000);
 
-  return await fetch(process.env.TIME_API_URI + '?' + slug, {
+  return fetch(process.env.NEXT_PUBLIC_TIME_API_URI + '?' + slug, {
     cache: 'no-store',
   })
     .then((res) =>
@@ -21,8 +23,8 @@ async function getDataFromServer(slug: string) {
     .catch((e) => JSON.stringify(e));
 }
 
-async function RepoComponent({ slug }: { slug: string }) {
-  return <span>{await getDataFromServer(slug)}</span>;
+function RepoComponent({ slug }: { slug: string }) {
+  return <span>{getDataFromServer(slug)}</span>;
 }
 
 export default RepoComponent;
