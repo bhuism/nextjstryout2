@@ -1,6 +1,6 @@
 'use client';
 
-import { Grid } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 import Paper from '@mui/material/Paper';
 import TimeComponent from '~/lib/components/TimeComponent';
 
@@ -11,10 +11,10 @@ const TestPage = () => {
     <Paper sx={{ maxWidth: 936, margin: 'auto', overflow: 'hidden' }}>
       <Grid container spacing={1}>
         {[...Array(25)].map((e, i) => (
-          <Grid key={i} columns={32} item>
-            {/* <Suspense fallback={<CircularProgress />}> */}
-            {i}:<TimeComponent slug={'a' + i} />
-            {/* </Suspense> */}
+          <Grid key={i} item xs={12}>
+            <Typography align="center">
+              {i}:<TimeComponent slug={'a' + i} />
+            </Typography>
           </Grid>
         ))}
       </Grid>
