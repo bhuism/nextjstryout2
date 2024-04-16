@@ -1,3 +1,5 @@
+'use client';
+
 import type { Viewport } from 'next';
 import type { PropsWithChildren } from 'react';
 
@@ -5,7 +7,7 @@ import Layout from '~/lib/layout';
 import Providers from '~/lib/provider/Providers';
 
 import AuthGuard from '~/lib/provider/AuthGuard';
-import AuthSessionProvider from '~/lib/provider/AuthSessionProvider';
+import AuthSessionProviderGoogle from '~/lib/provider/AuthSessionProviderGoogle';
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -16,13 +18,13 @@ const RootLayout = ({ children }: PropsWithChildren) => {
   return (
     <html lang="en">
       <body>
-        <AuthSessionProvider>
+        <AuthSessionProviderGoogle>
           <Providers>
             <Layout>
               <AuthGuard>{children}</AuthGuard>
             </Layout>
           </Providers>
-        </AuthSessionProvider>
+        </AuthSessionProviderGoogle>
       </body>
     </html>
   );

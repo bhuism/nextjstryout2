@@ -1,3 +1,5 @@
+'use client';
+
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 
@@ -36,10 +38,12 @@ const Footer = () => {
         underline="hover"
       >
         {release}
-      </Link>{' - '}
+      </Link>
+      {' - '}
       <Link color="inherit" href={'/privacy.html'} underline="hover">
         privacy
-      </Link>{' - '}
+      </Link>
+      {' - '}
       <Link color="inherit" href={'/terms.html'} underline="hover">
         terms of use
       </Link>

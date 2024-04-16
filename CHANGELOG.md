@@ -4,172 +4,150 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [1.24.46](https://github.com/bhuism/nextjstryout2/compare/v1.24.45...v1.24.46) (2024-04-16)
 
-
 ### Bug Fixes
 
-* **deps:** Update dependency react-oidc-context to v3.1.0 ([04c6674](https://github.com/bhuism/nextjstryout2/commit/04c66743fc2d65dea7ee45a00f09d808f66f70b4))
+- **deps:** Update dependency react-oidc-context to v3.1.0 ([04c6674](https://github.com/bhuism/nextjstryout2/commit/04c66743fc2d65dea7ee45a00f09d808f66f70b4))
 
 ## [1.24.45](https://github.com/bhuism/nextjstryout2/compare/v1.24.44...v1.24.45) (2024-04-15)
 
-
 ### Bug Fixes
 
-* Rollback repocomponent ([a717c00](https://github.com/bhuism/nextjstryout2/commit/a717c001677494fdc96f324fc27543310290f746))
-* Timecomponent ([f101827](https://github.com/bhuism/nextjstryout2/commit/f10182799ff6ec0547cff747c89148f5197a23a9))
+- Rollback repocomponent ([a717c00](https://github.com/bhuism/nextjstryout2/commit/a717c001677494fdc96f324fc27543310290f746))
+- Timecomponent ([f101827](https://github.com/bhuism/nextjstryout2/commit/f10182799ff6ec0547cff747c89148f5197a23a9))
 
 ## [1.24.44](https://github.com/bhuism/nextjstryout2/compare/v1.24.43...v1.24.44) (2024-04-15)
 
-
 ### Bug Fixes
 
-* **deps:** Update dependency next to v14.2.1 ([9de8c43](https://github.com/bhuism/nextjstryout2/commit/9de8c43de6847ea0baad0cdab2ad1af0c21da85f))
-* **deps:** Update dependency react-icons to v5.1.0 ([9671832](https://github.com/bhuism/nextjstryout2/commit/9671832c6f48b53d4377251d8fbdfff815dbf33d))
+- **deps:** Update dependency next to v14.2.1 ([9de8c43](https://github.com/bhuism/nextjstryout2/commit/9de8c43de6847ea0baad0cdab2ad1af0c21da85f))
+- **deps:** Update dependency react-icons to v5.1.0 ([9671832](https://github.com/bhuism/nextjstryout2/commit/9671832c6f48b53d4377251d8fbdfff815dbf33d))
 
 ## [1.24.43](https://github.com/bhuism/nextjstryout2/compare/v1.24.42...v1.24.43) (2024-04-08)
 
-
 ### Bug Fixes
 
-* Trigger ([cc462e7](https://github.com/bhuism/nextjstryout2/commit/cc462e71db6e4e1698ca38d42dcf6c608084af1a))
+- Trigger ([cc462e7](https://github.com/bhuism/nextjstryout2/commit/cc462e71db6e4e1698ca38d42dcf6c608084af1a))
 
 ## [1.24.42](https://github.com/bhuism/nextjstryout2/compare/v1.24.41...v1.24.42) (2024-04-04)
 
-
 ### Bug Fixes
 
-* **deps:** Update all dependencies ([aff8cbe](https://github.com/bhuism/nextjstryout2/commit/aff8cbecf0045f286a7d0cb2172337f46dab66e6))
-* Trigger ([4e5c046](https://github.com/bhuism/nextjstryout2/commit/4e5c0463b09f73463b05075c45bf505755c0b4ca))
+- **deps:** Update all dependencies ([aff8cbe](https://github.com/bhuism/nextjstryout2/commit/aff8cbecf0045f286a7d0cb2172337f46dab66e6))
+- Trigger ([4e5c046](https://github.com/bhuism/nextjstryout2/commit/4e5c0463b09f73463b05075c45bf505755c0b4ca))
 
 ## [1.24.41](https://github.com/bhuism/nextjstryout2/compare/v1.24.40...v1.24.41) (2024-04-03)
 
-
 ### Bug Fixes
 
-* Update terms.html ([0cc91ad](https://github.com/bhuism/nextjstryout2/commit/0cc91ad15f5b83d087afb3aeef1cc779b539af31))
+- Update terms.html ([0cc91ad](https://github.com/bhuism/nextjstryout2/commit/0cc91ad15f5b83d087afb3aeef1cc779b539af31))
 
 ## [1.24.40](https://github.com/bhuism/nextjstryout2/compare/v1.24.39...v1.24.40) (2024-04-03)
 
-
 ### Bug Fixes
 
-* Link terms and privacy ([e6bf6d8](https://github.com/bhuism/nextjstryout2/commit/e6bf6d86e4547731c37a002eeab25eff5a5e9b16))
+- Link terms and privacy ([e6bf6d8](https://github.com/bhuism/nextjstryout2/commit/e6bf6d86e4547731c37a002eeab25eff5a5e9b16))
 
 ## [1.24.39](https://github.com/bhuism/nextjstryout2/compare/v1.24.38...v1.24.39) (2024-04-02)
 
-
 ### Bug Fixes
 
-* Add terms ans privacy ([24b840d](https://github.com/bhuism/nextjstryout2/commit/24b840da62a8744b3ad897d1effbb738abf04dea))
-* **deps:** Update dependency @emotion/styled to v11.11.5 ([7f22cba](https://github.com/bhuism/nextjstryout2/commit/7f22cbaa5bfc8140c109d0b0c3b254dfc97fad09))
+- Add terms ans privacy ([24b840d](https://github.com/bhuism/nextjstryout2/commit/24b840da62a8744b3ad897d1effbb738abf04dea))
+- **deps:** Update dependency @emotion/styled to v11.11.5 ([7f22cba](https://github.com/bhuism/nextjstryout2/commit/7f22cbaa5bfc8140c109d0b0c3b254dfc97fad09))
 
 ## [1.24.38](https://github.com/bhuism/nextjstryout2/compare/v1.24.37...v1.24.38) (2024-03-26)
 
-
 ### Bug Fixes
 
-* Trigger ([830fc7c](https://github.com/bhuism/nextjstryout2/commit/830fc7c20db7883629deb767bb807e2a1ac5d99d))
+- Trigger ([830fc7c](https://github.com/bhuism/nextjstryout2/commit/830fc7c20db7883629deb767bb807e2a1ac5d99d))
 
 ## [1.24.37](https://github.com/bhuism/nextjstryout2/compare/v1.24.36...v1.24.37) (2024-03-20)
 
-
 ### Bug Fixes
 
-* Server component ([44a72cc](https://github.com/bhuism/nextjstryout2/commit/44a72cc41fddfa58f98ce298e09d3a9f8ea66fe8))
-* Trigger ([f2aab71](https://github.com/bhuism/nextjstryout2/commit/f2aab71110c2dcbf1655fb59fb84e35d7e1636f7))
+- Server component ([44a72cc](https://github.com/bhuism/nextjstryout2/commit/44a72cc41fddfa58f98ce298e09d3a9f8ea66fe8))
+- Trigger ([f2aab71](https://github.com/bhuism/nextjstryout2/commit/f2aab71110c2dcbf1655fb59fb84e35d7e1636f7))
 
 ## [1.24.36](https://github.com/bhuism/nextjstryout2/compare/v1.24.35...v1.24.36) (2024-03-20)
 
-
 ### Bug Fixes
 
-* Add count ([0debd10](https://github.com/bhuism/nextjstryout2/commit/0debd10543a313872fd8902a0f8cec65fe635316))
+- Add count ([0debd10](https://github.com/bhuism/nextjstryout2/commit/0debd10543a313872fd8902a0f8cec65fe635316))
 
 ## [1.24.35](https://github.com/bhuism/nextjstryout2/compare/v1.24.34...v1.24.35) (2024-03-20)
 
-
 ### Bug Fixes
 
-* Dont use map ([da3959b](https://github.com/bhuism/nextjstryout2/commit/da3959b09a4b35f5c83d9f2fc19b712649244715))
+- Dont use map ([da3959b](https://github.com/bhuism/nextjstryout2/commit/da3959b09a4b35f5c83d9f2fc19b712649244715))
 
 ## [1.24.34](https://github.com/bhuism/nextjstryout2/compare/v1.24.33...v1.24.34) (2024-03-20)
 
-
 ### Bug Fixes
 
-* Move to client component with server action ([511df40](https://github.com/bhuism/nextjstryout2/commit/511df40a4f4b482d6acefdfc6cd86ba0b392ef3d))
+- Move to client component with server action ([511df40](https://github.com/bhuism/nextjstryout2/commit/511df40a4f4b482d6acefdfc6cd86ba0b392ef3d))
 
 ## [1.24.33](https://github.com/bhuism/nextjstryout2/compare/v1.24.32...v1.24.33) (2024-03-19)
 
-
 ### Bug Fixes
 
-* Add force-dynamic ([46e93ce](https://github.com/bhuism/nextjstryout2/commit/46e93ce594b9985fa5d889eff1372a4fd583d4d5))
-* Trigger ([f5eb532](https://github.com/bhuism/nextjstryout2/commit/f5eb53292c9acc9c496b4c7a6297c58582cbe55e))
+- Add force-dynamic ([46e93ce](https://github.com/bhuism/nextjstryout2/commit/46e93ce594b9985fa5d889eff1372a4fd583d4d5))
+- Trigger ([f5eb532](https://github.com/bhuism/nextjstryout2/commit/f5eb53292c9acc9c496b4c7a6297c58582cbe55e))
 
 ## [1.24.32](https://github.com/bhuism/nextjstryout2/compare/v1.24.31...v1.24.32) (2024-03-19)
 
-
 ### Bug Fixes
 
-* User group ([a300a5e](https://github.com/bhuism/nextjstryout2/commit/a300a5e41595b76fb653a23bad29d7d39b6fd182))
+- User group ([a300a5e](https://github.com/bhuism/nextjstryout2/commit/a300a5e41595b76fb653a23bad29d7d39b6fd182))
 
 ## [1.24.31](https://github.com/bhuism/nextjstryout2/compare/v1.24.30...v1.24.31) (2024-03-19)
 
-
 ### Bug Fixes
 
-* Add loading ([9f9face](https://github.com/bhuism/nextjstryout2/commit/9f9face62118375b45da892f3c2b72406b533e86))
+- Add loading ([9f9face](https://github.com/bhuism/nextjstryout2/commit/9f9face62118375b45da892f3c2b72406b533e86))
 
 ## [1.24.30](https://github.com/bhuism/nextjstryout2/compare/v1.24.29...v1.24.30) (2024-03-19)
 
-
 ### Bug Fixes
 
-* Add icons ([6d2c56e](https://github.com/bhuism/nextjstryout2/commit/6d2c56eb5c57746fb424e6b0d2ab02aa384d9b91))
-* Add icons ([fca0fcc](https://github.com/bhuism/nextjstryout2/commit/fca0fcc15ea08e01cb135188b67a2527905421dc))
-* Better fetch ([d24cc16](https://github.com/bhuism/nextjstryout2/commit/d24cc16b665f14ae4b53f5f664d0f8b3b6cb26df))
-* Disable pwa in dev ([1d9f100](https://github.com/bhuism/nextjstryout2/commit/1d9f10014698e64bb75d0a4ad26cfd9fe8ca726f))
+- Add icons ([6d2c56e](https://github.com/bhuism/nextjstryout2/commit/6d2c56eb5c57746fb424e6b0d2ab02aa384d9b91))
+- Add icons ([fca0fcc](https://github.com/bhuism/nextjstryout2/commit/fca0fcc15ea08e01cb135188b67a2527905421dc))
+- Better fetch ([d24cc16](https://github.com/bhuism/nextjstryout2/commit/d24cc16b665f14ae4b53f5f664d0f8b3b6cb26df))
+- Disable pwa in dev ([1d9f100](https://github.com/bhuism/nextjstryout2/commit/1d9f10014698e64bb75d0a4ad26cfd9fe8ca726f))
 
 ## [1.24.29](https://github.com/bhuism/nextjstryout2/compare/v1.24.28...v1.24.29) (2024-03-18)
 
-
 ### Bug Fixes
 
-* Call more, dynamic time api endpoint ([14830c6](https://github.com/bhuism/nextjstryout2/commit/14830c6d27c7cc3b97a3e436acf84d0a0563cea5))
+- Call more, dynamic time api endpoint ([14830c6](https://github.com/bhuism/nextjstryout2/commit/14830c6d27c7cc3b97a3e436acf84d0a0563cea5))
 
 ## [1.24.28](https://github.com/bhuism/nextjstryout2/compare/v1.24.27...v1.24.28) (2024-03-18)
 
-
 ### Bug Fixes
 
-* Remove slowdown ([5681a8b](https://github.com/bhuism/nextjstryout2/commit/5681a8bc75d8b288aeef54573ae1bf917e85315f))
+- Remove slowdown ([5681a8b](https://github.com/bhuism/nextjstryout2/commit/5681a8bc75d8b288aeef54573ae1bf917e85315f))
 
 ## [1.24.27](https://github.com/bhuism/nextjstryout2/compare/v1.24.26...v1.24.27) (2024-03-18)
 
-
 ### Bug Fixes
 
-* Gettime to service hostname ([e53e563](https://github.com/bhuism/nextjstryout2/commit/e53e563aaebdf278ccd2baba3f724d82dccdb2d8))
+- Gettime to service hostname ([e53e563](https://github.com/bhuism/nextjstryout2/commit/e53e563aaebdf278ccd2baba3f724d82dccdb2d8))
 
 ## [1.24.26](https://github.com/bhuism/nextjstryout2/compare/v1.24.25...v1.24.26) (2024-03-18)
 
-
 ### Bug Fixes
 
-* Try streaming with suspense ([fa37ea1](https://github.com/bhuism/nextjstryout2/commit/fa37ea165d30fb00c1714ac06b733d363c3abdbb))
+- Try streaming with suspense ([fa37ea1](https://github.com/bhuism/nextjstryout2/commit/fa37ea165d30fb00c1714ac06b733d363c3abdbb))
 
 ## [1.24.25](https://github.com/bhuism/nextjstryout2/compare/v1.24.24...v1.24.25) (2024-03-15)
 
-
 ### Bug Fixes
 
-* Add fallbacks ([361fd8d](https://github.com/bhuism/nextjstryout2/commit/361fd8d3fca0ba8b58a507e9cfaa4eedf8d2dd6d))
-* Headers in next config ([9442151](https://github.com/bhuism/nextjstryout2/commit/94421513035d8b562afa20afb98a4fe07ba6b4f0))
-* Move to serwist ([d6369fc](https://github.com/bhuism/nextjstryout2/commit/d6369fc5d22e7017478a6a056777c457f202831d))
-* Page.tsx export metada ([94fb2ee](https://github.com/bhuism/nextjstryout2/commit/94fb2eee26d8c207587153f05ccd40a32de5d8bf))
-* Prettier ([c4d8282](https://github.com/bhuism/nextjstryout2/commit/c4d8282c22333ae7e17f97bd46754ad3e3a28056))
-* Remove src map, fix headers, build ([db26b48](https://github.com/bhuism/nextjstryout2/commit/db26b4837e4d0cfc99f1c1a9f5bbe8524a4c77e7))
-* Warning ([47f351f](https://github.com/bhuism/nextjstryout2/commit/47f351f01e2bd87b54d898fe1c6c6e4b99a116d1))
+- Add fallbacks ([361fd8d](https://github.com/bhuism/nextjstryout2/commit/361fd8d3fca0ba8b58a507e9cfaa4eedf8d2dd6d))
+- Headers in next config ([9442151](https://github.com/bhuism/nextjstryout2/commit/94421513035d8b562afa20afb98a4fe07ba6b4f0))
+- Move to serwist ([d6369fc](https://github.com/bhuism/nextjstryout2/commit/d6369fc5d22e7017478a6a056777c457f202831d))
+- Page.tsx export metada ([94fb2ee](https://github.com/bhuism/nextjstryout2/commit/94fb2eee26d8c207587153f05ccd40a32de5d8bf))
+- Prettier ([c4d8282](https://github.com/bhuism/nextjstryout2/commit/c4d8282c22333ae7e17f97bd46754ad3e3a28056))
+- Remove src map, fix headers, build ([db26b48](https://github.com/bhuism/nextjstryout2/commit/db26b4837e4d0cfc99f1c1a9f5bbe8524a4c77e7))
+- Warning ([47f351f](https://github.com/bhuism/nextjstryout2/commit/47f351f01e2bd87b54d898fe1c6c6e4b99a116d1))
 
 ## [1.24.24](https://github.com/bhuism/nextjstryout2/compare/v1.24.23...v1.24.24) (2024-03-13)
 

@@ -4,7 +4,7 @@ import { User } from 'oidc-client-ts';
 import { PropsWithChildren } from 'react';
 import { AuthProvider, AuthProviderProps } from 'react-oidc-context';
 
-const AuthSessionProvider = ({ children }: PropsWithChildren) => {
+const AuthSessionProviderAuth0 = ({ children }: PropsWithChildren) => {
   const authority = 'dev-g4n3hjan0v2jg3le.eu.auth0.com';
 
   const redirect_uri = process.env.NEXT_PUBLIC_REDIRECT_URI;
@@ -24,4 +24,4 @@ const AuthSessionProvider = ({ children }: PropsWithChildren) => {
   return <AuthProvider {...oidcConfig}>{children}</AuthProvider>;
 };
 
-export default AuthSessionProvider;
+export default AuthSessionProviderAuth0;

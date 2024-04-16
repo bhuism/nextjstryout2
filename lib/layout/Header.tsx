@@ -1,3 +1,5 @@
+'use client';
+
 import MenuIcon from '@mui/icons-material/Menu';
 import { ListItemText } from '@mui/material';
 import AppBar from '@mui/material/AppBar';
@@ -67,7 +69,13 @@ export default function Header(props: HeaderProps) {
             </Grid>
             <Grid item>
               <IconButton color="inherit" sx={{ p: 0.5 }}>
-                <Avatar src={auth.user?.profile.picture} alt="My Avatar" />
+                <Avatar
+                  src={auth.user?.profile.picture}
+                  alt="Avatar"
+                  slotProps={{
+                    img: { referrerPolicy: 'no-referrer' },
+                  }}
+                />
               </IconButton>
             </Grid>
           </Grid>

@@ -7,61 +7,66 @@ import {
   Container,
   CssBaseline,
 } from '@mui/material';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { redirect } from 'next/navigation';
 import type { PropsWithChildren } from 'react';
 import { useAuth } from 'react-oidc-context';
-
-const defaultTheme = createTheme();
 
 const Login = () => {
   const auth = useAuth();
 
   return (
-    <ThemeProvider theme={defaultTheme}>
-      <Container component="main" maxWidth="xs">
-        <CssBaseline />
-        <Box
-          sx={{
-            marginTop: 8,
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-          }}
+    <Container component="main" maxWidth="xs">
+      <CssBaseline />
+      <Box
+        sx={{
+          marginTop: 8,
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+        }}
+      >
+        <h1>NextJsTryOut2</h1>
+        <Button
+          variant="contained"
+          sx={{ mt: 3, mb: 2 }}
+          size="large"
+          onClick={() => auth.signinRedirect()}
         >
-          <h1>NextJsTryOut2</h1>
-          <Button
-            variant="contained"
-            sx={{ mt: 3, mb: 2 }}
-            size="large"
-            onClick={() => auth.signinRedirect()}
-          >
-            Login
-          </Button>
-        </Box>
-      </Container>
-    </ThemeProvider>
+          Login
+        </Button>
+      </Box>
+    </Container>
   );
 };
 
 const AuthGuard = ({ children }: PropsWithChildren) => {
   const auth = useAuth();
 
-  switch (auth.activeNavigator) {
-    case 'signinSilent':
-      return <div>Signing you in...</div>;
-    case 'signoutRedirect':
-      return <div>Signing you out...</div>;
+  if (auth.activeNavigator) {
+    return <span>{auth.activeNavigator}</span>;
   }
+
+  // switch (auth.activeNavigator) {
+  //   case 'signinSilent':
+  //     return <div>Signing you in...</div>;
+  //   case 'signoutRedirect':
+  //     return <div>Signing you out...</div>;
+  // }
 
   if (auth.isLoading) {
     return <CircularProgress />;
   }
 
   if (auth.error) {
-    return <div>Oops... {auth.error.message}</div>;
+    auth.clearStaleState();
+    auth.revokeTokens();
+    redirect(
+      process.env.NEXT_PUBLIC_REDIRECT_URI + `/?e=${auth.error.message}`
+    );
+    return <CircularProgress />;
+  } else {
+    return auth.isAuthenticated ? <>{children}</> : <Login />;
   }
-
-  return auth.isAuthenticated ? <>{children}</> : <Login />;
 };
 
 export default AuthGuard;
