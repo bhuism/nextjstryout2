@@ -13,7 +13,6 @@ const AuthSessionProviderGoogle = ({ children }: PropsWithChildren) => {
     authority: authority,
     client_id:
       '208909681900-1ft69pgsv7dfdtoirt7m9a1a39sl7mk3.apps.googleusercontent.com',
-    client_secret: '',
     scope: 'openid profile email',
     metadataUrl: 'https://' + authority + '/.well-known/openid-configuration',
     redirect_uri: redirect_uri,
