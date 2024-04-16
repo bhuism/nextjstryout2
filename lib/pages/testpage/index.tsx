@@ -1,3 +1,5 @@
+'use client';
+
 import { Grid } from '@mui/material';
 import Paper from '@mui/material/Paper';
 import TimeComponent from '~/lib/components/TimeComponent';

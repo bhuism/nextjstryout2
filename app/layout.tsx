@@ -1,13 +1,15 @@
 'use client';
 
+import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
+import { ThemeProvider } from '@mui/material/styles';
 import type { Viewport } from 'next';
 import type { PropsWithChildren } from 'react';
 
 import Layout from '~/lib/layout';
-import Providers from '~/lib/provider/Providers';
 
 import AuthGuard from '~/lib/provider/AuthGuard';
 import AuthSessionProviderAuth0 from '~/lib/provider/AuthSessionProviderAuth0';
+import theme from '~/lib/styles/theme/theme';
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -18,13 +20,15 @@ const RootLayout = ({ children }: PropsWithChildren) => {
   return (
     <html lang="en">
       <body>
-        <AuthSessionProviderAuth0>
-          <Providers>
-            <Layout>
-              <AuthGuard>{children}</AuthGuard>
-            </Layout>
-          </Providers>
-        </AuthSessionProviderAuth0>
+        <AppRouterCacheProvider options={{ enableCssLayer: true }}>
+          <AuthSessionProviderAuth0>
+            <ThemeProvider theme={theme}>
+              <Layout>
+                <AuthGuard>{children}</AuthGuard>
+              </Layout>
+            </ThemeProvider>
+          </AuthSessionProviderAuth0>
+        </AppRouterCacheProvider>
       </body>
     </html>
   );

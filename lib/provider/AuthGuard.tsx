@@ -1,5 +1,3 @@
-'use client';
-
 import {
   Box,
   Button,
@@ -42,22 +40,15 @@ const Login = () => {
 const AuthGuard = ({ children }: PropsWithChildren) => {
   const auth = useAuth();
 
-  if (auth.activeNavigator) {
-    return <span>{auth.activeNavigator}</span>;
-  }
-
-  // switch (auth.activeNavigator) {
-  //   case 'signinSilent':
-  //     return <div>Signing you in...</div>;
-  //   case 'signoutRedirect':
-  //     return <div>Signing you out...</div>;
-  // }
-
   if (auth.isLoading) {
     return <CircularProgress />;
   }
 
-  if (auth.error) {
+  if (auth.activeNavigator) {
+    return <span>{auth.activeNavigator}</span>;
+  }
+
+  if (auth && auth.error) {
     auth.clearStaleState();
     auth.revokeTokens();
     redirect(
