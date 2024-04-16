@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.24.46](https://github.com/bhuism/nextjstryout2/compare/v1.24.45...v1.24.46) (2024-04-16)
+
+
+### Bug Fixes
+
+* **deps:** Update dependency react-oidc-context to v3.1.0 ([04c6674](https://github.com/bhuism/nextjstryout2/commit/04c66743fc2d65dea7ee45a00f09d808f66f70b4))
+
 ## [1.24.45](https://github.com/bhuism/nextjstryout2/compare/v1.24.44...v1.24.45) (2024-04-15)
 
 
