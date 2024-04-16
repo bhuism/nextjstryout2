@@ -7,7 +7,7 @@ import Layout from '~/lib/layout';
 import Providers from '~/lib/provider/Providers';
 
 import AuthGuard from '~/lib/provider/AuthGuard';
-import AuthSessionProviderGoogle from '~/lib/provider/AuthSessionProviderGoogle';
+import AuthSessionProviderAuth0 from '~/lib/provider/AuthSessionProviderAuth0';
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -18,13 +18,13 @@ const RootLayout = ({ children }: PropsWithChildren) => {
   return (
     <html lang="en">
       <body>
-        <AuthSessionProviderGoogle>
+        <AuthSessionProviderAuth0>
           <Providers>
             <Layout>
               <AuthGuard>{children}</AuthGuard>
             </Layout>
           </Providers>
-        </AuthSessionProviderGoogle>
+        </AuthSessionProviderAuth0>
       </body>
     </html>
   );
