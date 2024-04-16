@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -e
+
+rm -Rf .next
+npm run build
+cp -Rf public .next/standalone
+mkdir -p .next/standalone/.next
+cp -Rf .next/static .next/standalone/.next/
+npm run start
