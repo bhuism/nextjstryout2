@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.24.48](https://github.com/bhuism/nextjstryout2/compare/v1.24.47...v1.24.48) (2024-04-17)
+
+
+### Bug Fixes
+
+* Allways login ([66d914e](https://github.com/bhuism/nextjstryout2/commit/66d914e58e6abc9ff99a6bbde60ba4012b6464e6))
+
 ## [1.24.47](https://github.com/bhuism/nextjstryout2/compare/v1.24.46...v1.24.47) (2024-04-16)
 
 
