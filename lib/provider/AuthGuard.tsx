@@ -7,8 +7,7 @@ import {
 } from '@mui/material';
 import { redirect } from 'next/navigation';
 import type { PropsWithChildren } from 'react';
-import { useEffect, useState } from 'react';
-import { hasAuthParams, useAuth } from 'react-oidc-context';
+import { useAuth } from 'react-oidc-context';
 
 const Login = () => {
   const auth = useAuth();
@@ -40,20 +39,21 @@ const Login = () => {
 
 const AuthGuard = ({ children }: PropsWithChildren) => {
   const auth = useAuth();
-  const [hasTriedSignin, setHasTriedSignin] = useState(false);
 
-  useEffect(() => {
-    if (
-      !hasAuthParams() &&
-      !auth.isAuthenticated &&
-      !auth.activeNavigator &&
-      !auth.isLoading &&
-      !hasTriedSignin
-    ) {
-      auth.signinRedirect();
-      setHasTriedSignin(true);
-    }
-  }, [auth, hasTriedSignin]);
+  // const [hasTriedSignin, setHasTriedSignin] = useState(false);
+
+  // useEffect(() => {
+  //   if (
+  //     !hasAuthParams() &&
+  //     !auth.isAuthenticated &&
+  //     !auth.activeNavigator &&
+  //     !auth.isLoading &&
+  //     !hasTriedSignin
+  //   ) {
+  //     auth.signinRedirect();
+  //     setHasTriedSignin(true);
+  //   }
+  // }, [auth, hasTriedSignin]);
 
   if (!auth || auth.isLoading) {
     return <CircularProgress />;
