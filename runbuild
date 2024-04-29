@@ -2,6 +2,7 @@
 
 set -e
 
+npm i
 rm -Rf .next
 npm run build
 cp -Rf public .next/standalone

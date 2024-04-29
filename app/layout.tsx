@@ -11,6 +11,41 @@ import AuthGuard from '~/lib/provider/AuthGuard';
 import AuthSessionProviderAuth0 from '~/lib/provider/AuthSessionProviderAuth0';
 import theme from '~/lib/styles/theme/theme';
 
+// export const metadata: Metadata = {
+//   applicationName: "NextJsTryout2",
+//   title: {
+//     default: "NextJsTryout2",
+//     template: "NextJsTryout2",
+//   },
+//   description: "NextJsTryout2 for you",
+//   appleWebApp: {
+//     capable: true,
+//     statusBarStyle: "default",
+//     title: "NextJsTryout2",
+//     // startUpImage: [],
+//   },
+//   formatDetection: {
+//     telephone: false,
+//   },
+//   openGraph: {
+//     type: "website",
+//     siteName: "NextJsTryout2",
+//     title: {
+//       default: "NextJsTryout2",
+//       template: "NextJsTryout2",
+//     },
+//     description: "NextJsTryout2 for you",
+//   },
+//   twitter: {
+//     card: "summary",
+//     title: {
+//       default: "NextJsTryout2",
+//       template: "NextJsTryout2",
+//     },
+//     description: "NextJsTryout2 for you",
+//   },
+// };
+
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
@@ -18,7 +53,8 @@ export const viewport: Viewport = {
 
 const RootLayout = ({ children }: PropsWithChildren) => {
   return (
-    <html lang="en">
+    <html lang="en" dir="ltr">
+      <head />
       <body>
         <AppRouterCacheProvider options={{ enableCssLayer: true }}>
           <AuthSessionProviderAuth0>
