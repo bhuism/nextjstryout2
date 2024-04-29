@@ -39,7 +39,6 @@ const Login = () => {
 
 const AuthGuard = ({ children }: PropsWithChildren) => {
   const auth = useAuth();
-  // const [hasTriedSignin, setHasTriedSignin] = useState(false);
 
   // useEffect(() => {
   //   if (
