@@ -4,38 +4,51 @@ import {
   CircularProgress,
   Container,
   CssBaseline,
+  Divider,
+  Stack,
 } from '@mui/material';
 import { redirect } from 'next/navigation';
 import type { PropsWithChildren } from 'react';
 import { useAuth } from 'react-oidc-context';
 
-const Login = () => {
-  const auth = useAuth();
-
+const CenterComponents = ({ children }: PropsWithChildren) => {
   return (
     <Container component="main" maxWidth="xs">
       <CssBaseline />
       <Box
-        sx={{
-          marginTop: 8,
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-        }}
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+        minHeight="80vh"
       >
-        <h1>NextJsTryOut2</h1>
-        <Button
-          variant="contained"
-          sx={{ mt: 3, mb: 2 }}
-          size="large"
-          onClick={() => auth.signinRedirect()}
+        <Stack
+          spacing={2}
+          divider={<Divider orientation="horizontal" flexItem />}
+          alignItems={'center'}
         >
-          Login
-        </Button>
+          {children}
+        </Stack>
       </Box>
     </Container>
   );
 };
+
+const Login = () => {
+  const auth = useAuth();
+  return (
+    <>
+      <h1>NextJsTryOut2</h1>
+      <Button
+        variant="contained"
+        size="large"
+        onClick={() => auth.signinRedirect()}
+      >
+        Login
+      </Button>
+    </>
+  );
+};
+
 
 const AuthGuard = ({ children }: PropsWithChildren) => {
   const auth = useAuth();
@@ -54,11 +67,21 @@ const AuthGuard = ({ children }: PropsWithChildren) => {
   // }, [auth, hasTriedSignin]);
 
   if (!auth || auth.isLoading) {
-    return <CircularProgress />;
+    return (
+      <CenterComponents>
+        <CircularProgress />
+        <span>Auth Loading</span>
+      </CenterComponents>
+    );
   }
 
   if (auth.activeNavigator) {
-    return <span>{auth.activeNavigator}</span>;
+    return (
+      <CenterComponents>
+        <CircularProgress />
+        <span>{auth.activeNavigator}</span>
+      </CenterComponents>
+    );
   }
 
   if (auth.error) {
@@ -67,9 +90,20 @@ const AuthGuard = ({ children }: PropsWithChildren) => {
     redirect(
       process.env.NEXT_PUBLIC_REDIRECT_URI + `/?e=${auth.error.message}`
     );
-    return <CircularProgress />;
+    return (
+      <CenterComponents>
+        <CircularProgress />
+        <span>Error Redirect</span>
+      </CenterComponents>
+    );
   } else {
-    return auth.isAuthenticated ? <>{children}</> : <Login />;
+    return auth.isAuthenticated ? (
+      <>{children}</>
+    ) : (
+      <CenterComponents>
+        <Login />
+      </CenterComponents>
+    );
   }
 };
 
