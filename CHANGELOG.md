@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.24.53](https://github.com/bhuism/nextjstryout2/compare/v1.24.52...v1.24.53) (2024-05-09)
+
+
+### Bug Fixes
+
+* **deps:** Update all dependencies ([2943932](https://github.com/bhuism/nextjstryout2/commit/2943932784b9006c305bcf1eefc5bc3aeb61ecbe))
+* **deps:** Update dependency styled-components to v6.1.10 ([0184290](https://github.com/bhuism/nextjstryout2/commit/018429064c1d37d1a2f12f0c772676c7c98d1a44))
+
 ## [1.24.52](https://github.com/bhuism/nextjstryout2/compare/v1.24.51...v1.24.52) (2024-05-01)
 
 
