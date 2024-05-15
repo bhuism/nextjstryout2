@@ -17,7 +17,6 @@ import ListItemText from '@mui/material/ListItemText';
 import { usePathname } from 'next/navigation';
 
 import Link from 'next/link';
-import '../../lib/styles/globals.css';
 
 const categories = [
   {

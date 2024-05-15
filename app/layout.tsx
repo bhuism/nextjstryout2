@@ -10,6 +10,7 @@ import Layout from '~/lib/layout';
 import AuthGuard from '~/lib/provider/AuthGuard';
 import AuthSessionProviderAuth0 from '~/lib/provider/AuthSessionProviderAuth0';
 import theme from '~/lib/styles/theme/theme';
+import '~/lib/styles/globals.css';
 
 export const viewport: Viewport = {
   width: 'device-width',
