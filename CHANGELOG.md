@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.24.55](https://github.com/bhuism/nextjstryout2/compare/v1.24.54...v1.24.55) (2024-05-20)
+
+
+### Bug Fixes
+
+* Update index.tsx ([d9cd41e](https://github.com/bhuism/nextjstryout2/commit/d9cd41e7ad703e4b6a31b1908421c9138ef67e2b))
+
 ## [1.24.54](https://github.com/bhuism/nextjstryout2/compare/v1.24.53...v1.24.54) (2024-05-16)
 
 
