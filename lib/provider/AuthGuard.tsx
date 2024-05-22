@@ -34,21 +34,16 @@ const CenterComponents = ({ children }: PropsWithChildren) => {
 };
 
 const Login = () => {
-  const auth = useAuth();
+  const { signinRedirect } = useAuth();
   return (
     <>
       <h1>NextJsTryOut2</h1>
-      <Button
-        variant="contained"
-        size="large"
-        onClick={() => auth.signinRedirect()}
-      >
+      <Button variant="contained" size="large" onClick={() => signinRedirect()}>
         Login
       </Button>
     </>
   );
 };
-
 
 const AuthGuard = ({ children }: PropsWithChildren) => {
   const auth = useAuth();

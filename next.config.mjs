@@ -12,6 +12,7 @@ const withSerwist = withSerwistInit({
 const nextConfig = {
   swcMinify: true,
   reactStrictMode: true,
+  poweredByHeader: false,
   eslint: {
     dirs: ['app', 'lib'],
   },
