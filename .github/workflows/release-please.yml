@@ -3,7 +3,7 @@ name: Release Please
 on:
   push:
     branches:
-      - 'main'
+      - main
   workflow_dispatch:
 
 permissions:
@@ -14,11 +14,8 @@ jobs:
   release-please:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out code
-        uses: actions/checkout@v4
-
-      - name: release-please
-        uses: google-github-actions/release-please-action@v4
-        id: release
+      - uses: googleapis/release-please-action@v4
         with:
           token: ${{ secrets.MY_RELEASE_PLEASE_TOKEN }}
+          config-file: release-please-config.json
+          manifest-file: .release-please-manifest.json
