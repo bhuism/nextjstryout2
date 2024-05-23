@@ -12,7 +12,7 @@ function TimeComponent({ slug }: { slug: string }) {
   const { data, error } = useSWR<string, Error>(slug, fetcher);
 
   if (error) return <span>Failed to load</span>;
-  if (!data) return <span>Loading2...</span>;
+  if (!data) return <span>Loading...</span>;
 
   return <span>{data}</span>;
 }
