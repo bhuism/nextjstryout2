@@ -34,7 +34,6 @@
     "**/*.tsx",
     "app",
     "lib",
-    "commitlint.config.js",
     ".next/types/**/*.ts"
   ],
   "exclude": ["node_modules"]
