@@ -57,7 +57,7 @@ jobs:
         run: gcloud auth configure-docker europe-west4-docker.pkg.dev --quiet
 
       - name: Build and push docker image
-        uses: docker/build-push-action@2a53c6ccda456d31fb62eedc658aae06e238b7bd
+        uses: docker/build-push-action@ef6cba335306ace1da064b44f9f739dec9be9fa0
         with:
           context: .
           platforms: linux/arm64,linux/amd64
