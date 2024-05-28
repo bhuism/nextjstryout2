@@ -1,4 +1,4 @@
-name: Tesat, Build and Push Docker Image
+name: Test, Build and Push Docker Image
 
 on:
   push:
