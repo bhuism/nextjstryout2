@@ -69,3 +69,12 @@ jobs:
           build-args: |
             GIT_SHA=${{ github.sha }}
             RELEASE=${{ github.ref }}
+
+      - name: Kubernetes context
+        uses: Azure/k8s-set-context@v1
+        with:
+          method: kubeconfig
+          kubeconfig: ${{ secrets.KUBE_CONFIG }}
+  
+      - name: Rollout Restart
+        run: kubectl -n nextjstryout2 rollout restart statefulset nextjstryout2 
