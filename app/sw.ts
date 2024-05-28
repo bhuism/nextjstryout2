@@ -1,3 +1,8 @@
+/// <reference lib="webworker" /> // 
+// @ts-check
+/** @type {ServiceWorkerGlobalScope} */
+// @ts-ignore
+
 import { defaultCache } from '@serwist/next/worker';
 import type { PrecacheEntry, SerwistGlobalConfig } from 'serwist';
 import { Serwist } from 'serwist';

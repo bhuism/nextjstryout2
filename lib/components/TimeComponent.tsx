@@ -1,5 +1,6 @@
 'use client';
 
+import { CircularProgress } from '@mui/material';
 import useSWR, { Fetcher } from 'swr';
 
 const fetcher: Fetcher<string, string> = (slug: string) => {
@@ -11,8 +12,8 @@ const fetcher: Fetcher<string, string> = (slug: string) => {
 function TimeComponent({ slug }: { slug: string }) {
   const { data, error } = useSWR<string, Error>(slug, fetcher);
 
-  if (error) return <span>Failed to load</span>;
-  if (!data) return <span>Loading...</span>;
+  if (error) return <span style={{ color: 'red' }}>{error.message}</span>;
+  if (!data) return <CircularProgress />;
 
   return <span>{data}</span>;
 }
