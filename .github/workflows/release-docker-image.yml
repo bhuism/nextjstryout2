@@ -71,7 +71,7 @@ jobs:
             RELEASE=${{ github.ref }}
 
       - name: Kubernetes context
-        uses: Azure/k8s-set-context@v1
+        uses: Azure/k8s-set-context@v4
         with:
           method: kubeconfig
           kubeconfig: ${{ secrets.KUBE_CONFIG }}
