@@ -29,13 +29,6 @@ const Footer = () => {
         underline="hover"
       >
         {gitsha_short}
-      </Link>{' '}
-      <Link
-        color="inherit"
-        href={'https://github.com/bhuism/nextjstryout2/releases/tag/' + release}
-        underline="hover"
-      >
-        {release}
       </Link>
       {' - '}
       <Link color="inherit" href={'/privacy.html'} underline="hover">
