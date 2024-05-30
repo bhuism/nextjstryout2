@@ -1,3 +1,5 @@
+'use client';
+
 import { User } from 'oidc-client-ts';
 import { PropsWithChildren } from 'react';
 import { AuthProvider, AuthProviderProps } from 'react-oidc-context';
