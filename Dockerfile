@@ -1,7 +1,7 @@
 FROM node:21-alpine AS base
 
 FROM base AS deps
-RUN apk add --no-cache libc6-compat
+RUN apk update ; apk add --no-cache libc6-compat
 WORKDIR /app
 
 COPY package.json package-lock.json* ./
