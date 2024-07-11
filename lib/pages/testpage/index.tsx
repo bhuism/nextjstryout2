@@ -9,7 +9,7 @@ const TestPage = () => {
   return (
     <>
       <Grid container spacing={1}>
-        {[...Array(200)].map((e, i) => (
+        {[...Array(1000)].map((e, i) => (
           <Grid item xs={3}>
             {i}:<TimeComponent slug={'a' + i} />
           </Grid>

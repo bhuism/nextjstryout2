@@ -1,12 +1,4 @@
-name: Test, Build and Push Docker Image, Rollout Restart
-
-on:
-  push:
-    tags:
-      - 'v*.*.*'
-    branches:
-      - main
-  workflow_dispatch:
+on: [push, workflow_dispatch]
 
 env:
   REGISTRY: europe-west4-docker.pkg.dev/impl-383520/docker
@@ -64,11 +56,11 @@ jobs:
   build-and-push-docker-image:
     needs: test
 
+    if: github.ref == 'refs/heads/development'
+
     runs-on: ubuntu-latest
 
     name: Build and Push Docker Image
-
-    # if: github.event_name == 'push' && startsWith(github.event.ref, 'refs/tags/v')
 
     steps:
       - name: Checkout
@@ -76,7 +68,7 @@ jobs:
 
       - name: Extract metadata (tags, labels) for Docker
         id: meta
-        uses: docker/metadata-action@f7b4ed12385588c3f9bc252f0a2b520d83b52d48
+        uses: docker/metadata-action@a64d0487d7069df33b279515d35d60fa80e2ea62
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           tags: |
@@ -105,7 +97,7 @@ jobs:
         run: gcloud auth configure-docker europe-west4-docker.pkg.dev --quiet
 
       - name: Build and push docker image
-        uses: docker/build-push-action@cfed4e995e12d7bee5002f066f5649e5f1cc059c
+        uses: docker/build-push-action@1a162644f9a7e87d8f4b053101d1d9a712edc18c
         with:
           context: .
           platforms: linux/arm64,linux/amd64
