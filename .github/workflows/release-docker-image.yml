@@ -1,12 +1,6 @@
 name: Test, Build and Push Docker Image, Rollout Restart
 
-on:
-  push:
-    tags:
-      - 'v*.*.*'
-    branches:
-      - main
-  workflow_dispatch:
+on: [push, workflow_dispatch]
 
 env:
   REGISTRY: europe-west4-docker.pkg.dev/impl-383520/docker
@@ -64,11 +58,11 @@ jobs:
   build-and-push-docker-image:
     needs: test
 
+    if: github.ref == 'refs/heads/development'
+
     runs-on: ubuntu-latest
 
     name: Build and Push Docker Image
-
-    # if: github.event_name == 'push' && startsWith(github.event.ref, 'refs/tags/v')
 
     steps:
       - name: Checkout
