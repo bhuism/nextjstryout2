@@ -1,5 +1,3 @@
-name: Test, Build and Push Docker Image, Rollout Restart
-
 on: [push, workflow_dispatch]
 
 env:
