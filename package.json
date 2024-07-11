@@ -3,6 +3,19 @@
   "version": "1.24.60",
   "private": true,
   "author": "bhuism",
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@fontsource/roboto": "^5.0.13",
+    "@mui/icons-material": "^5.15.15",
+    "@mui/material": "^5.15.15",
+    "@mui/material-nextjs": "^5.15.11",
+    "@serwist/next": "^9.0.0",
+    "next": "^14.2.1",
+    "oidc-client-ts": "^3.0.1",
+    "react-oidc-context": "^3.1.0",
+    "styled-components": "^6.1.8"
+  },
   "scripts": {
     "dev": "NEXT_PUBLIC_GIT_SHA=$(git rev-parse HEAD) NEXT_PUBLIC_RELEASE=refs/tags/development next dev",
     "build": "next build",
@@ -19,21 +32,6 @@
     "up-interactive": "npm up -i",
     "up-latest": "npm up-interactive -L",
     "push-release": "git push --follow-tags origin main"
-  },
-  "dependencies": {
-    "@emotion/cache": "^11.11.0",
-    "@emotion/react": "^11.11.4",
-    "@emotion/styled": "^11.11.0",
-    "@fontsource/roboto": "^5.0.13",
-    "@mui/icons-material": "^5.15.15",
-    "@mui/material": "^5.15.15",
-    "@mui/material-nextjs": "^5.15.11",
-    "@serwist/next": "^9.0.0",
-    "next": "^14.2.1",
-    "oidc-client-ts": "^3.0.1",
-    "react-oidc-context": "^3.1.0",
-    "styled-components": "^6.1.8",
-    "swr": "^2.2.5"
   },
   "peerDependencies": {
     "react": "^18.2.0",
