@@ -20,7 +20,7 @@ const Footer = () => {
       >
         nextjstryout2
       </Link>
-      {'-'}
+      {' - '}
       {new Date().getFullYear()}
       {' - '}
       <Link
